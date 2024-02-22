@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* 1 id + 1 id + 1 class = 100 + 100 + 10 = 210 */
+        #div1 #p1.para {
+            color: green;
+        }
+
+        /* 1 id + 1 class = 100 + 10 = 110 */
+        #p1.para {
+            color: pink;
+        }
+
+        /* 1 id = 100 */
+        #p1{
+            color: goldenrod;
+        }
+
+        /* 1 class = 100 */
+        .para{
+            color: blue;
+        }
+
+        /* 1 tag name = 1 nhưng nếu gán !important thì nó sẽ có mức độ ưu tiên số 1 */
+        p{
+            color: red !important;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <!-- /* 1 inline = 1000 */ -->
+    <p style="color: aqua;" class="para" id="p1">Xin chào bạn nha</p>
+</div>
+</body>
+</html>

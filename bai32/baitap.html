@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para::before{
+                content: "+ ";
+                color: red;
+                font-weight: bold;
+            }
+        .para::after{
+                content: " *";
+                color: red;
+                font-weight: bold;
+            }
+
+        h2::first-letter{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .para2::first-line{
+            color: green;
+            font-weight: 10;
+
+        }
+        h2::selection{
+            background-color: yellow;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Đây là tiêu đề</h2>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+
+    <p class="para2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea vero voluptatibus rem vitae odit, quasi natus asperiores pariatur dolores. 
+        <br>
+         Quos delectus quae laudantium saepe perspiciatis quia non, earum officiis 
+        <br>
+         consequatur beatae amet vero, molestias officia. Dignissimos nobis qui consequuntur quia nisi mollitia vel amet sunt nam architecto, commodi libero voluptate.</p>
+
+</body>
+</html>

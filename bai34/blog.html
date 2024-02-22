@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Cái gì đó chỉ áp dụng cho flex container */
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .blog-layout{
+            /* display: flex; cho phép hiển thị nằm ngang */
+            display: flex;
+            justify-content: space-around;
+        }
+        .blog-item{
+            background-color: aquamarine;
+        }
+        /* flex-basis chỉ áp dụng cho flex item */
+        .blog-1{
+            flex-basis: 20%;
+        }
+        .blog-2{
+            flex-basis: 50%;
+        }
+        .blog-3{
+            flex-basis: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tạo block bằng flex</h1>
+    <div class="blog-layout">
+        <div class="blog-item blog-1">
+            <h2>Tóm tắt bài viết</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sint similique consequatur magni aperiam nobis ratione ex eaque repudiandae molestiae!</p>
+        </div>
+
+        <div class="blog-item blog-2">
+            <h2>Tiêu đề bài viết</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sint similique consequatur magni aperiam nobis ratione ex eaque repudiandae molestiae!</p>
+        </div>
+
+        <div class="blog-item blog-3">
+            <h2>Bài viết liên quan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sint similique consequatur magni aperiam nobis ratione ex eaque repudiandae molestiae!</p>
+        </div>
+    </div>   
+</body>
+</html>

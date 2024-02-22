@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cover{
+            width: 100%;
+            height: 500px;
+            border: 2px solid red;
+            /* background-color: green; linear-gradient(hướng chuyển,màu đầu tiên,màu tiếp theo, vd 180deg, green, yellow: tạo ra 1 linear-gradient có 2 màu xanh và vàng, hướng chuyển từ màu xanh sang màu vàng 180 độ)*/
+            background-image: linear-gradient(90deg,green,red,);
+            /* background-image: url(./tapsu.jpg); ảnh nhỏ hơn thẻ chứa nó thì ảnh sẽ bị lặp đi lặp lại để lấp đầy thẻ, để hiển thị duy nhất 1 ảnh thì dùng background-repeat: no-repeat; nhưng lúc này thẻ sẽ còn dư nhiều chỗ trống. Để lựa chọn vị trí xuất hiện của ảnh trong thẻ, ta dùng background-position: bottom để nằm ở giữa bên dưới thẻ, để ảnh nằm góc trên bên trái ta dùng background-position: left bottom; để ảnh đổ đầy thẻ bắt đầu từ vị trí đầu (bên trái) của bức ảnh, ta dùng background-size: cover; để ảnh đổ đầy thẻ bắt đầu từ vị trí giữa của thẻ, ta dùng: background-position: center; Vậy tóm lại để ảnh xuất hiện ở giữa và đổ đầy thẻ, ta dùng background-size: cover và background-position: center */
+            /* background-image: url(./tapsu.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; */
+            /* background-position: left bottom; */
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cover"></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 90px;
+            text-align: center;
+        }
+        /* >= 1024px thì thực hiện lệnh trong dấu ngoặc nhọn */
+        @media screen and (min-width: 1024px) {
+            h1{
+                color: red;
+            }
+        }
+        /* 768 đến 1023 thì thực hiện lệnh trong dấu ngoặc nhọn  */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            h1{
+                color: green;
+                font-size: 60px;
+            }
+        }
+        /* <768 */
+        @media screen and (max-width: 767px) {
+            h1{
+                color: yellow;
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>hello media query</h1>
+</body>
+</html>

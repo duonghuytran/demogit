@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block</title>
+    <style>
+        .block{
+            display: flex;
+            justify-content: space-evenly;
+            /* flex-wrap: wrap; giúp các khối block tự động xuống dòng khi kích thước hiển thị k đủ, flex-wrap: wrap-reverse; sẽ ngược lại, cho lên dòng, còn mặc định là nowrap tức là các ô sẽ thu nhỏ lại chứ k lên hay xuống dòng */
+            flex-wrap: wrap;
+        }
+        .block-item{
+            width: 200px;
+            height: 50px;
+            background-color: yellow;
+            border: 1px solid green;
+            box-sizing: border-box;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tạo block bằng flex</h1>
+    <div class="block">
+        <div class="block-item">1</div>
+        <div class="block-item">2</div>
+        <div class="block-item">3</div>
+        <div class="block-item">4</div>
+        <div class="block-item">5</div>
+        
+    </div>
+</body>
+</html>

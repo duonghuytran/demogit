@@ -1,0 +1,39 @@
+<!-- Bài toán nào viết đc bằng if else thì có thể viết được bằng switch case nh ngược lại thì chưa chắc -->
+<!-- SWITCH-CASE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="nhapso">Hãy nhập số vào đây</label>
+    <input type="number" name="" id="nhapso">
+    <br>
+    <button onclick="HienThi()">Kiểm tra</button> <span id="spanne"></span>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+<!-- onchange -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="hihi">Chọn mã</label>
+    <select onchange="HienThi()" id="hihi">
+        <option value="200">MÃ 200</option>
+        <option value="401">MÃ 401</option>
+        <option value="403">MÃ 403</option>
+        <option value="404">MÃ 404</option>
+        <option value="500">MÃ 500</option>        
+    </select>
+    <p id="spanne"></p>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 50px;
+            height: 50px;
+        }
+
+        .box1{
+            background-color: yellow;
+        }
+
+        .box2{
+            background-color: green;
+            padding: 10px;
+            border: 5px dashed red;
+            /* margin-top: auto nằm giữa theo phương ngang; */
+
+            margin: 5px;
+            /* margin: x, y, s, z, chỉ có x thì giá trị áp dụng cho cả 4 cạnh, chỉ có x, y thì x áp dụng cạnh trên dưới, y áp dụng cho cạnh trái, phải, x, y, s thì x cạnh trên, y cạnh trái và phải, s cạnh dưới, cả 4 thì x trên y phải s dưới z trái  */
+        }
+
+        .box3{
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            padding: 10px;
+            border: 10px;
+            margin: 10px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="box1 box"></div>
+    <div class="box2 box">
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

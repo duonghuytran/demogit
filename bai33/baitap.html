@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para{display: inline;}
+        .para1{display: block;}
+        #p-1{display: none;}
+    </style>
+</head>
+<body>
+    <!-- Nội dụng dạng block, tức là dù nội dung của dòng k hết 1 dòng của trình duyệt nh nó vẫn sẽ chiếm hết 1 dòng -->
+    <p id="p-1" class="para">Lorem ipsum dolor sit amet.</p>
+    <div class="para">Lorem ipsum dolor sit amet.</div>
+    <hr>
+    <!-- Nội dụng dạng inline, tức là nội dung của dòng dài đến đâu thì chiếm diện tích vừa đủ cho nó-->
+    <span class="para1">Lorem ipsum dolor sit amet.</span>
+    <strong class="para1">Lorem ipsum dolor sit amet.</strong>
+</body>
+</html>
