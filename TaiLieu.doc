@@ -1,0 +1,1495 @@
+3. bai-3-cau-truc-file-html
+Gõ html : 5 để tạo cấu trúc html tự động
+Alt + Shift + F: giúp bố cục trang web trở nên rõ ràng và dễ nhìn hơn
+<meta charset="UTF-8">: Bảo đảm k làm lỗi font
+Ctrl + K + C: comment đoạn code, bấm Ctrl + K + U để bỏ cmt
+<meta name="Viewport" content="width=device-width, inital-scale=1.0">: ý nghĩa là hiển thị content bằng với kích thước của thiết bị với tỷ lệ là 1
+đặt trỏ chuột ở cuối dòng cần copy, k cần tô nguyên đoạn, sau đó bấm Ctrl C để copy và dán nơi cần dán
+4. bai-4-the-heading-va-the-para
+<body>
+    <h1>Tiêu đề h1</h1> Bấm h để chọn tiêu đề, h1-h6 cỡ chữ sẽ nhỏ dần
+    <h2>Tiêu đề h2</h2>
+    <h3>Tiêu đề h3</h3>
+    <h4>Tiêu đề h4</h4>
+    <h5>Tiêu đề h5</h5>
+    <h6>Tiêu đề h6</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> dùng để ngắt dòng Hic omnis velit quae corrupti illo ex quasi qui repellat sunt, suscipit doloremque nesciunt unde ad autem nostrum obcaecati, sequi dolor culpa.</p> cú pháp là lorem, nếu văn bản dài quá thì dùng tính năng View-Word wrap hoặc dùng phím tắt Alt + Z để ngắt dòng tự động
+    <hr> dùng để kẻ đường ngang dài
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> cú pháp là lorem8 dùng để viết 8 từ, nếu muốn 2 từ thì ghi lorem2
+</body>
+5. bai-5-mot-so-the-dinh-dang-van-ban
+-	Thẻ tạo chữ in đậm: b, strong:
+<p>Lorem ipsum, dolor <b>sit amet consectetur</b>: muốn in đậm đoạn văn bản nào thì đưa đoạn đó vào trong thẻ b như trên, áp dụng tương tự với thẻ strong như sau: <p>Lorem ipsum, dolor sit amet <strong>consectetur</strong> </p>
+-	Thẻ tạo chữ nghiêng: i, em
+ <p>Lorem ipsum <i>dolor</i> sit amet.</p>: muốn in nghiêng đoạn văn bản nào thì đưa đoạn đó vào trong thẻ i như trên, áp dụng tương tự với thẻ em như sau: <p>Lorem ipsum dolor sit <em>amet</em> consectetur adipisicing.</p>
+-	Thẻ tạo hightlight cho chữ: mark
+<p>Lorem ipsum dolor sit amet <mark>consectetur</mark>, adipisicing elit: đưa nội dung cần hightlight vào giữa 2 chữ mark để hailai vàng
+-	Thẻ tạo chữ nhỏ: <p>Lorem ipsum dolor sit amet consectetur.</p>
+ <small>this’s small text</small>: chữ nằm trong thẻ small sẽ nhỏ hơn chữ nằm trong trong thẻ p
+-	Thẻ tạo các chỉ số ở phía trên và dưới: thẻ sup và sub: 
++	Thẻ sup: dùng để tạo số có số mũ: <p>đây là x bình phương: x<sup>2</sup></p>, lưu ý giữa chữ x và thẻ sup nên bỏ space
++	Thẻ sub: dùng để tạo số ở dưới chân: <p>x<sub>1</sub>+x<sub>2</sub>=x<sub>3</sub></p> kết quả là x1+x2=x3
+6. bai-6-mot-so-the-dinh-dang-van-ban-2
+-	<del>:Thẻ tạo dấu gạch ngang chữ: <p>Lorem ipsum <del>dolor</del> sit amet consectetur adipisicing.</p> kết quả: Lorem ipsum dolor sit amet consectetur adipisicing.
+-	<q>: Thẻ tạo dấu nháy kép: <p><q>Chào các bạn</q>, Lan nói</p> kết quả: “Chào các bạn”, Lan nói
+-	<blockquote>: Thẻ tạo trích dẫn: <h3>Tập đoàn vin gờ rúp</h3>
+<blockquote>Đây là tập đoàn lớn</blockquote> kết quả: 
+Tập đoàn vin gờ rúp
+Đây là tập đoàn lớn
+-	<pre>: Thẻ cho phép xuống dòng không cần dùng <br>: 
+<pre>
+       Đêm...nhức nhối nỗi niềm riêng khôn tả
+
+       Tiếng côn trùng réo rắt quyện tiếng mưa
+
+        Khép lại nhé những tủi hờn uất hận
+        
+        Cuộc sống bất công biết mấy cho vừa
+    </pre>
+Ở trên ta có thể chỉnh sửa thoải mái mà k cần dùng thẻ <br> cho mỗi dòng, code như nào thì web sẽ hiển thị như vậy
+-	
+7. bai-7-tim-hieu-attribute-html
+-	Khái niệm về attribute: được dùng để bổ sung thông tin (chú thích) cho đối tượng cần chú thích. Hầu hết các attribute sử dụng cho tất cả các loại thẻ HTML, 1 số chỉ sử dụng riêng cho 1 số thẻ nhất định. Ngoài attribute có sẵn, chúng ta có thể tự tạo ra các attribute phục vụ các mục đích riêng
+-	Attribute title: <p> <b title="Tổ chức y tế thế giới" >WHO</b> đã cảnh báo về một loại bênh dịch mới</p> kết quả là khi rê chuột vào chữ WHO, sẽ hiện ra chú thích "Tổ chức y tế thế giới"
+-	Attribute Id, class: Id và class chủ yếu sử dụng trong CSS và Javascript
++	id dùng để định danh 1 phần tử DUY NHẤT trong trang, nếu tạo ra 2 phần tử có id giống nhau sẽ gây bất lợi về sau. Việc thêm id chỉ hỗ trợ cho các nghiệp vụ của coder chứ k hiển thị lên.
++	tên class có thể đặt tùy ý, dùng để trang trí cho các phần tử:<p id="p-a" class="text-box cover">Lorem ipsum dolor sit amet consectetur.</p>. Ví dụ ở trên ta có 2 class cách nhau bằng dấu cách, class text-box và class cover, đó là 2 class của phần tử p (tức là đoạn văn bản ở trên). 1 phần tử có thể có nhiều class và các class có thể trùng nhau, ip thì k đc
+-	Attribute style: cho phép viết các thuộc tính của CSS trong HTML để có thể trực tiếp trang trí cho phần tử HTML mà k cần phải viết các file CSS riêng. Trong att style này có nhiều thuộc tính như: border, display, height, margin, padding, position, color…
++	Thuộc tính color: <h1 style="color:red">Đây là màu đỏ</h1> kết quả Đây là màu đỏ
+8. bai-8-link-lien-ket-va-cac-attribute-lien-quan
+-	Cách tạo link liên kết bằng thẻ <a>: Attribute href của thẻ <a> giúp truy cập liên kết được gán vào đối tượng bằng trang hiện tại, ví dụ: <p>truy cập trang <a href="https://dantri.com.vn/">dân trí</a> để xem thêm các tin khác</p>, kết quả: truy cập trang dân trí để xem thêm các tin khác. Attribute target tương tự như trên nhưng mở liên kết ở 1 cửa sổ mới
+-	Tạo liên kết đến nội bộ các trang khác thư mục: giả sử có 1 trang index.html nằm trong thư mục components và trang link.html cùng nằm ngoài thư mục đó, muốn điều hướng từ trang link.html sang trang index.html thông qua đối tượng đây thì dùng như sau: <p>Bấm vào <a href="./components/index.html" target="_blank">đây</a> để truy cập vào trang index.html trong cùng thư mục này</p>
+-	Tạo liên kết đến nội bộ các trang trong thư mục: giả sử có 1 trang index.html và trang link.html cùng nằm trong 1 thư mục, muốn điều hướng từ trang link.html sang trang index.html thông qua đối tượng đây thì dùng như sau: <p>Bấm vào <a href="./index.html" target="_blank">đây</a> để truy cập vào trang index.html trong cùng thư mục này</p>
+-	Tạo liên kết đến nội bộ các thành phần trong cùng 1 trang trong thư mục: giả sử có 1 bài viết rất dài, ta muốn đến cuối trang có 1 nút bấm để điều hướng đến vị trí nào đó trong bài viết  thì tại bài viết đó phải tạo 1 tiêu đề cùng với id của nó, ví dụ: <h2 id="txt-info" >Tiêu đề 2</h2>, cuối bài viết ta dùng lệnh sau để điều hướng về vị trí h2: <p> <a href="#txt-info">Lên tiêu đề 2</a></p>. Toàn bộ ví dụ:
+<body>
+    <h1>Đây là tiêu đề bài viết</h1>
+    <p>
+        Đây là đoạn văn bản rất dài
+        <h2 id="txt-info" >Tiêu đề 2</h2>
+        ...đây là phần tiếp theo của đoạn văn bản dài đó...
+        <h3 id="txt-info1" >Tiêu đề 3</h3>
+        ...đây là phần tiếp theo của đoạn văn bản dài đó...
+        <h4>id="txt-info2" >Tiêu đề 4</h4>
+        ..kết thúc nội dung.
+    </p>
+    <p> <a href="#txt-info">Lên tiêu đề 2</a></p>
+</body>
+9. bai-9-the-tao-danh-sach-bang
+-	Danh sách sắp xếp: dùng thẻ <li> trong thẻ <on> như sau: 
+<ol>
+    <li>Cà phê nâu</li>
+    <li>Cà phê đen</li>
+    <li>Sữa chua</li>
+    <li>Sinh tố bơ</li>
+    <li>Nước cam</li>
+</ol>
+Để thêm nhiều  thẻ <li>, ta dùng cú pháp liX với X là số dòng cần thêm, như trên là li5m Kết quả là:
+1.	Cà phê nâu
+2.	Cà phê đen
+3.	Sữa chua
+4.	Sinh tố bơ
+5.	Nước cam
+-	Danh sách không sắp xếp: tương tự như trên nhưng thay thế thẻ <ol> bằng thẻ <ul>, kết quả cho ra sẽ là các dấu chấm đen ở trước mỗi dòng thay vì đánh số tt.
+-	Cách tạo bảng trong HTML: dùng thẻ <table>, trong thẻ này dùng thẻ <thead> để tượng trưng cho thẻ tiêu đều, trong thẻ này dùng thẻ <tr> đặc trưng cho mỗi dòng, và vì thường tiêu đề chỉ có 1 dòng nên chỉ cần dòng 1 thẻ <tr> là đủ, bên trong thẻ này sẽ có nhiều cột cùng nằm chung dòng với vai trò là tiêu đề, sau đó dùng thẻ <tbody> để tượng trưng cho nội dung các dòng bên dưới tiêu đề, ví dụ:
+<table>
+    <thead>
+        <tr>
+            <th>Họ tên</th>
+            <th>Tuổi</th>
+            <th>Điểm</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Ng VĂn A</td>
+            <td>20</td>
+            <td>7.5</td>
+        </tr>
+        <tr>
+            <td>Ng VĂn B</td>
+            <td>21</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Ng VĂn B</td>
+            <td>22</td>
+            <td>9</td>
+        </tr>
+    </tbody>
+</table>
+Kết quả là: Tiêu đề đc bôi đen và các thành phần bên dưới đã có dạng bảng, để có thể đẹp hơn thì sẽ phải dùng đế CSS.
+Họ tên	Tuổi	Điểm
+Ng VĂn A	20	7.5
+Ng VĂn B	21	8
+Ng VĂn B	22	9
+
+10. Bài 10: Thẻ form trong html
+-	Vai trò của thẻ form trong HTML: dùng trong html, làm nhiệm vụ gửi thông tin người dùng về phía server để xử lý, thẻ form có thể chứa nhiều thẻ input bên trong nó như: input dạng chữ, dạng mật khẩu, dạng số, dạng lựa chọn, dạng tick chọn, input file. Ví dụ khi người dùng nhập vào 2 trường email và mật khẩu để đăng nhập vào tài khoản thì thẻ form sẽ nhận thông tin và gửi về server. Thẻ input có thể đi cùng với thẻ label, thẻ label sẽ cho biết tên trường cần nhập vào thẻ input
+Ví dụ về thẻ form, tạo mới 1 thẻ form và thêm attribute action cho nó, trong thẻ form tạo 1 thẻ <label> và thẻ <input>, gán att id của thẻ input vào att for của thẻ label để khi nhấn vào label nó sẽ tự focus trỏ chuột vào ô input, phần type trong input là kiểu dữ liệu mà của dữ liệu đc nhập vào, sau khi dữ liệu được nhập vào input, server sẽ đọc dữ liệu đó thông qua att name. 
+Att action trong thẻ form sẽ ghi địa chỉ mà thông tin từ thẻ form sẽ gửi đến, bên backend sẽ cung cấp địa chỉ cho frontend
+Att method trong thẻ form sẽ có GET và POST: khi dùng GET, sau khi người dùng nhập và bấm login, các thông tin đó sẽ được hiển thị lên thanh url. Khi dùng POST, thông tin sẽ được gửi tới server và không hiển thị lên thanh url. Nếu muốn reset lại những thứ đang nhập trong thẻ form thì dùng thẻ input att type kiểu reset
+Thay vì sử dụng 2 thẻ input với kiểu submit và reset như trên, ta có thể sử dụng thẻ button:
+	<button type="submit">login</button>
+        	<button type="reset">refresh</button>
+Về cách hoạt động đều như nhau.
+Đối với phần att value,tức là giá trị mặc định của thẻ input, ta có thể ghi tùy ý, ví dụ như phần email luôn muốn giữ là abc@gmail.com thì có thể sử dụng att value này
+Tiếp theo là att placeholder giúp hiển thị gợi ý hoặc yêu cầu cho người dùng ngay trong phần cần nhập, sau khi người dùng nhập giá trị vào nó sẽ tự biến mất. Toàn bộ ví dụ:
+<body>
+    <form action="./login" method="POST">
+        <label for="txt-username">Username</label>
+        <input id="txt-username" placeholder="Nhập id vào đây" name="Username" type="text">
+        <br>
+        <label for="txt-password">Password</label>
+        <input id="txt-password" placeholder="Nhập pass vào đây" name="Password" type="password">
+        <br>
+        <!-- <input type="submit" value="login">
+        <input type="reset" value="Làm mới"> -->
+        <button type="submit">login</button>
+        <button type="reset">refresh</button>
+    </form>
+</body>
+11. Bài 11: Các dạng input trong html-phần1
+-	Input dạng text: 
+<form action="action_page" method="POST">
+        <label for="duonghuy">Tên đăng nhập</label>
+        <input required type="text" name="hihi" id="duonghuy">
+        <button type="submit">Gửi</button>
+    </form>
+Ở đây chúng ta sử dụng 1 form gửi về action_page với method là POST, nhãn Tên đăng nhập sẽ dùng att for để focus vào ô nhập liệu khi người dùng bấm vào tên nhãn. Tiếp theo là thẻ input, att required bắt buộc người dùng phải nhập liệu, att type yêu cầu kiểu nhập liệu dạng text, att name là phần mà server sẽ nhận diện nhãn này, id là định danh duy nhất cho nhãn này để nhãn label có thể đọc và focus. Cuối cùng là nút Gửi att type là kiểu submit
+-	Input dạng password:
+	<form action="action_page" method="POST">
+        <label for="duonghuypass">Mật khẩu</label>
+        <input required type="password" name="haha" id="duonghuypass">
+        <button type="submit">Gửi</button>
+   	 </form>
+	Tương tự như trên nh att type là password
+-	Input dạng email:
+<form action="action_page" method="POST">
+        <label for="duonghuymeo">Email</label>
+        <input required type="email" name="hahaha" id="duonghuymeo">
+        <button type="submit">Gửi</button>
+    </form>
+Tương tự như trên nh att type là email, người dùng k thể nhập email mà k chứa ký tự @ và đuôi mở rộng sau đó
+-	Input dạng số:
+<form action="action_page" method="POST">
+        <label for="duonghuyso">Số lượng sản phẩm</label>
+        <input required type="number" name="hahahi" id="duonghuyso" min="0" max="100" step="10">
+        <button type="submit">Gửi</button>
+    </form>
+Tương tự như trên nh att type là number, att min là số tối thiểu có thể nhập, max là số tối đa có thể nhập, step là mỗi bước nhảy của số. Nếu người dùng nhập bất kỳ thứ gì khác ngoài số thì nó sẽ k nhận
+-	Input dạng checkbox:
+<form action="action_page" method="POST">
+        
+        <input required type="checkbox" name="hahahaha" id="duonghuycb" value="bye">
+        <label for="duonghuycb">Check Box</label>
+        <button type="submit">Gửi</button>
+    </form>
+Tương tự như trên nh att type là checkbox, att value là giá trị mặc định sẽ gửi cho server sau khi người dùng tick chọn và bấm Gửi (submit). Nhờ có thẻ label mà khi người dùng ấn vào chữ tên của thẻ label, nó sẽ focus vào ô nhập liệu của thẻ input. Để tên của thẻ label nằm trước icon thẻ input, ta code thẻ label trước code thẻ input sau, ngược lại thì code sau
+-	Input dạng Radio button:
+<form action="action_page" method="POST">
+        
+        <input required type="radio" name="Gioitinh" id="gioitinhnam" value="Male">
+        <label for="gioitinhnam">Nam</label>
+       
+        <input required type="radio" name="Gioitinh" id="gioitinhnu" value="Femail">
+        <label for="gioitinhnu">Nữ</label>
+        
+        <input required type="radio" name="Gioitinh" id="gioitinhkhac" value="Other">
+        <label for="gioitinhkhac">Khác</label>
+  
+        <button type="submit">Gửi</button>
+    </form>
+Tương tự như trên nh att type là radio, có 2 kiểu:
++	Chỉ chọn đc 1 trong nhiều lựa chọn: Để chỉ cho phép người dùng chọn 1 trong nhiều lựa chọn, name của các lựa chọn phải giống nhau, về phần att value thì mỗi lựa chọn thường mang 1 giá trị riêng hoặc tùy theo nhu cầu của admin.
++	Chọn đc nhiều hơn 1 lựa chọn: Cho phép người dùng chọn nhiều lựa chọn, name của các lựa chọn phải khác nhau
+12. Bài 12: Các dạng input trong html-phần 2
+-	Input dạng Select-option: cho phép định ra sẵn các giá trị mà người dùng chỉ có thể lựa chọn trong đó
+<h3>Tạo danh sách chọn</h3>
+    <form action="action_page" method="POST">
+        <label for="">Vui lòng chọn hãng xe:</label>
+        <select name="car" id="xe">
+            <option value="Toyota">Hãng Toyota</option>
+            <option value="Honda">Hãng Honda</option>
+            <option selected value="Kia">Hãng Kia</option>
+            <option value="Hyundai">Hãng Hyundai</option>
+        </select>
+        <button type="submit">Gửi</button>
+    </form>
+Cho phép người dùng chọn 1 trong các tùy chọn ở trên, riêng att selected đứng ở option nào thì option đó sẽ được chọn và hiển thị mặc định khi người dùng mở ra
+
+<h3>Hiển thị nhiều option</h3>
+    <form action="action_page" method="POST">
+        <label for="">Vui lòng chọn hãng xe:</label>
+        <select name="car" id="xe" size="4" multiple>
+            <option value="Toyota">Hãng Toyota</option>
+            <option value="Honda">Hãng Honda</option>
+            <option selected value="Kia">Hãng Kia</option>
+            <option value="Hyundai">Hãng Hyundai</option>
+        </select>
+        <button type="submit">Gửi</button>
+    </form>
+Tương tự như trên như att size cho phép hiển thị 4 option ra để xem
+
+
+-	Input dạng text-area: cho phép người dùng nhập 1 đoạn văn bản vào ô input
+<h3>text area</h3>
+    <form action="action_page" method="POST">
+        <label for="focus">Vui lòng nhập nội dung</label>
+        <textarea required name="Content" id="focus" cols="30" rows="10"></textarea>
+        <button type="submit">Gửi</button>
+    </form>
+cols là số cột hiển thị, rows là số dòng hiển thị, thực ra nó chỉ là 1 ô trống cho phép nhập liệu vào dùng đơn vị cột và hàng để đo lường thôi
+Bài 13. bai-13-cac-dang-input-trong-html-p3
+-	date:
+<form action="action_page" method="POST">
+        <label for="txt-date">Vui lòng chọn ngày</label>
+        <input type="date" name="Date" id="txt-date" min="2021-01-01" max="2021-12-31">
+        <button type="submit">Gửi</button>
+    </form>
+Input dạng date cho att type là date cho phép người dùng chọn ngày/tháng/năm dưới dạng lịch. Ngoài ra có thể dùng tính năng min max để giới hạn trên/dưới thời gian được phép chọn
+-	time:
+<h3>input dạng time</h3>
+    <form action="action_page" method="POST">
+
+        <label for="txt-time">Vui lòng chọn giờ</label>
+        <input type="time" name="Time" id="txt-time">
+        <button type="submit">Gửi</button>
+    </form>
+Input dạng time cho phép người dùng chọn thời gian là giờ và phút, sáng và chiều
+-	week:
+<h3>input dạng tuần</h3>
+    <form action="action_page" method="POST">
+        <label for="txt-week">Vui lòng chọn tuần</label>
+        <input type="week" name="Week" id="txt-week">
+        <button type="submit">Gửi</button>
+    </form>
+Input dạng weekcho phép người dùng chọn thời gian là tuần
+-	file
+<h3>input dạng file</h3>
+    <form action="action_page" method="POST">
+
+        <label for="txt-file">Vui lòng chọn file</label>
+        <input type="file" name="File" id="txt-file" multiple>
+        <button type="submit">Gửi</button>
+    </form>
+Dạng này cho phép người dùng chọn 1 file gửi lên, nếu muốn chọn nhiều file thì thêm att multiple
+Bài 14: bai-14-the-img-trong-html
+-	Hiển thị ảnh có sẵn trong thư mục lên trang web:
+<body>
+    <img src="./images/hehe.jpg" alt="đây là ảnh thẻ" style="height: auto;width: 300px;">
+</body>
+Att src dùng để chứa liên kết đến hình ảnh cần hiển thị, att alt dùng để dự phòng trường hợp ảnh không hiển thị được sẽ dùng để thay thế cho ar src, att style với 2 thuộc tính cao và rộng cho phép điều chỉnh kích thước ảnh theo px mong muốn. Tuy nhiên, để cố định 1 trong 2 chiều, ta có thể dùng tùy chọn auto, vì khi điều chỉnh ảnh có thể gây hiển thị k đc như mong muốn
+-	Hiển thị ảnh từ link liên kết ngoài:
+<img src="https://plus.unsplash.com/premium_photo-1678655852216-2c067ee35ecb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Ảnh vườn hoa từ web unsplash">
+Tương tự như trên nhưng phần src sẽ dán liên kết đến ảnh của trang web bên ngoài. Att style vẫn có thể sử dụng được đối với trường hợp này
+-	Sử dụng thẻ img kết hợp với thẻ a:
+<a href="https://unsplash.com/photos/a-man-holding-a-paper-bag-with-the-word-good-food-on-it-ZbtlHGyz-sk" target="_blank">
+        <img src="https://images.unsplash.com/photo-1695653423034-d15c9f3d1328?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Ảnh Grab từ web unsplash" style="width: 200px; height: auto;">
+    </a>
+
+Kết hợp với thẻ a để liên kết đến liên kết được đặt trong att href và vị trí X (>X</a>) thay vì đặt tiêu đề nào đó, ta có thể dùng thẻ img bên trong để hiển thị ảnh của liên kết đó luôn, tất nhiên nên hiển thị với kích thước nhỏ để tiết kiệm diện tích trang, khi người dùng bấm vào xem hình ảnh đó nó sẽ liên kết đến đường dẫn tron src
+Bài 15. bai-15-lam-viec-voi-media-trong-html
+-	Cách đưa file âm thanh vào trang web:
+<h3>Đưa file mp3 vào trang web</h3>
+    <audio controls>
+        <source src="./media/invalid_keypress.mp3" type="audio/mp3">
+    </audio>
+Dùng thẻ audio để đưa audio vào, trong thẻ audio dùng att src dẫn đến nơi chứa file cục bộ, att type cho biết đuôi của file. Để có thể hiển thị thanh công cụ điều khiển audio đó cần thêm att controls vào thẻ audio, công cụ gồm có các tính năng: nghe, dừng, tua, tải về, điều chỉnh tốc độ phát, điều chỉnh âm lượng, hiển thị thời gian toàn bộ đoạn audio và thời gian đã phát của đoạn audio đó
+-	Cách đưa file video vào trang web:
+<h3>Đưa file video vào trang web</h3>
+    <video style="width: 500px; height: auto" controls>
+        <source src="./media/film.mp4" type="video/mp4">
+    </video>
+Tương tự như trên, riêng att style của thẻ videoc dùng để điều chỉnh kích thước video để k chiếm không gian của trang web
+-	Cách nhúng video trên Youtube vào trang web:
+<h3>Đưa video Youtube vào trang web</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kKzgWXvQOyI?si=lIjp3j5icIf70j2-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+Truy cập video trên Youtube cần nhúng vào trang web, chọn vào Chia sẻ -> Nhúng -> Chọn Sao chép -> Dán liên kết vừa sao chép vào code, trong đó các chỉ số iframe đã được điều chỉnh thu nhỏ phù hợp.
+Tuy nhiên nếu Chủ sở hữu video k cho phép nhúng thì video sẽ không hiển thị lên trang web
+-	Các nhúng google map vào trang web:
+
+<h3>Đưa Google map vào trong trang web</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.805610827704!2d106.69593837589458!3d10.749459889397693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f66ddd2ed23%3A0x9404b4cf5ec28bb!2zNzkzLCAyOC8xLzIgVHLhuqduIFh1w6JuIFNv4bqhbiwgVMOibiBIxrBuZywgUXXhuq1uIDcsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1696134796879!5m2!1svi!2s" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+Truy cập vào Google Maps và tìm địa điểm cần nhúng, chọn Chia sẻ -> Nhúng bản đồ -> SAO CHÉP HTML -> Dán vào code. Điều chỉnh thông số width và height để tăng giảm kích thước hiển thị trên web
+Bài 16. bai-16-mot-so-the-tao-layout-trong-html
+-	Các thẻ hay dùng để tạo layout:
+<!-- menu trang -->
+    <nav></nav> <div></div>
+    <!-- banner trang web -->
+    <header></header> <div></div>
+    <!-- khối thân trang web -->
+    <section></section> <div></div>
+    <!-- phần chân trang web -->
+    <footer></footer>
+Thẻ div có thể dùng để tạo ra mọi bố cục. Các thành phần của trang web được tạo bằng các thẻ cụ thể
+-	Dùng dev-tool để xem xét 1 trang web cụ thể: dùng F12
+Bài 17. bai-17-cac-cach-su-dung-css-trong-html
+-	sử dụng CSS theo kiểu Inline
+<p style="color: red; font-size: 30px; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt.</p>
+Giả sử để tô màu đỏ và điều chỉnh kích thước cho dòng chữ, ta dùng att style với thuộc tính color và font-size trong thẻ p, đây là cách thông thường nhất
+-	Sử dụng CSS theo kiểu Internal
+<style>
+        p {
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Internal -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt.</p>
+</body>
+Cách 2 là tạo 1 thẻ p ở trong body, sau đó ở trong thẻ head dùng thẻ style, gọi đến thẻ p và điều chỉnh 2 thuộc tính màu và cỡ chữ cho nó
+-	Sử dụng CSS theo kiểu External
+p {
+    color: red;
+    font-size: 30px;
+}
+Tạo mới 1 file css. Đây là file CSS với 2 thuộc tính màu sắc và cỡ chữ, việc của chúng ta là liên kết với thẻ p. Lưu ý trong file css k cần sử dụng thẻ style. Đây là cách được sử dụng nhiều vì file css sẽ được tạo sử dụng đối với file css khác
+Tại file html cần liên kết với file css, ta gọi như sau:
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt.</p>
+</body>
+Bài 18. bai-18-cach-chon-phan-tu-trong-css-co-ban
+<head>
+    <title>Document</title>
+    <style>
+        /* CHọn phần tử bằng tag name */
+        h1 {
+            color: red;
+            font-style: italic;
+        }
+        /* CHọn phần tử bằng id*/
+        #p1{ 
+            color: green;
+        }
+        /* CHọn phần tử bằng class */
+        .para{
+            color: purple;
+        }
+        .bg{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Đoạn 1</h1>
+    <p id="p1">Chiều nay 30-9, Cục Cảnh sát điều tra tội phạm về tham nhũng, kinh tế,...</p>
+
+    <hr>
+    <h1>Đoạn 2</h1>
+    <p class="para">Vụ Vạn Thịnh Phát: Tìm bị hại...</p>
+
+    <hr>
+    <h1>Đoạn 3</h1>
+    <p class="para bg">Bước đầu điều tra...</p>
+    
+    <hr>
+    <h1>Đoạn 4</h1>
+    <p>C03 xác định những người mua 25 mã trái phiếu...</p>
+</body>
+Giả sử có 1 bài viết với 4 đoạn như ở trên, ta muốn cài đặt các thuộc tính cho 1 vài đối tượng nhất định, đầu tiên là tiêu đề, 
+-	Nếu muốn tất cả tiêu đề h1 đều có màu đỏ và in nghiêng, ta dùng cách tag name
+-	Nếu muốn dùng theo id, ta đặt id cho đối tượng cần cài đặt, lưu ý id là duy nhất, mỗi thẻ chỉ có 1 id và 1 id chỉ được sử dụng 1 lần duy nhất cho 1 thẻ, dùng cú pháp #tênid
+-	Nếu muốn dùng theo class, ta đặt tên class cho (các) thẻ đó và dùng cú pháp .teenclass. Một thẻ có thể có nhiều class và 1 class có thể được dùng chung cho nhiều thẻ
+Bài 19.bai-19-cach-chon-phan-tu-trong-css-nang-cao
+-	Chọn phần tử kết hợp id, class và tag name
+-	Cách sử dụng ký tự >, ~ khi chọn phần tử
+-	Chọn phần tử sử dụng các attribute
+-	Nếu muốn tất cả thẻ p trong thẻ div có các thuộc tính x,y thì tạo 1 style trong thẻ head, gõ div p { các thuộc tính x, y và giá trị của chúng}, luôn phải có dấu cách giữa div và p
+-	Trong cùng 1 bài viết nhưng có tới 2 thẻ div thì đặt id cho thẻ div muốn áp dụng thuộc tính x, y, sau đó sử dụng thẻ style trong thẻ head như trên nhưng cách khai báo là #id của thẻ div cần áp dụng p{}, ví dụ:
+ #div1 p{
+            color: green;
+            font-size: 30px; 
+        }
+-	Dùng class của div thay vì dùng id, như sau: .tên tất cả thẻ có class được đề cập, ví dụ :
+	.cover p{
+            color: green;
+            font-size: 30px; 
+        }
+-	Giả sử có 1 thẻ div chứa 2 thẻ p (gọi là p1 và p2), trong thẻ div đó lại chứa 1 thẻ div khác. Thẻ div con đó lại chứa 2 thẻ p khác (gọi là p3 và p4), để áp dụng thẻ style cho p1 và p2 mà không áp dụng cho p3 và p4 thì dùng cú pháp như sau:
+	#div1>p{
+            color: red;
+            font-size: 30px;
+        } với div1 là id của div
+Nếu muốn chỉ p3 và p4 được áp dụng thì làm như sau:
+	#div1 div p{
+            color: green;
+            font-size: 30px;
+        }
+-	Giả sử ở ngoài thẻ div trên có 2 thẻ p khác nằm độc lập, để áp dụng các thuộc tính x, y thì có thể khai báo cùng 1 tên class cho cả 2 thẻ sau đó dùng cách như đã học. Ngoài ra có thể sử dụng cách ngắn gọn hơn, k cần dùng att class của p3, p4 mà chỉ cần dùng cú pháp:
+	#div1~p{
+            color: red;
+            font-size: 30px; 
+        } với div1 là id của div, đoạn code trên có nghĩa là áp dụng thuộc tính cho các thẻ p nằm bên ngoài, ở phía dưới thẻ div, k áp dụng đối với các thẻ ở trên thẻ div
+-	Nếu muốn áp dụng thuộc tính cho thẻ có cùng lúc từ 2 class trở lên, ta dùng như sau: 
+	.para.pg {
+            color: red;
+            background-color: yellow;
+        } với para và pg là 2 class của thẻ . Lưu ý cần phải viết tên các class ngăn cách nhau bởi dấu “.”, nếu viết cách ra chương trình sẽ hiểu đây là class con của class trước nó
+-	Nếu muốn các thẻ có title được áp dụng thuộc tính thì làm như sau:
+	[title]{
+            color: green;
+        } bất kỳ thẻ nào có att title bên trong (dù tên của title khác nhau) đều đc áp dụng
+-	Nếu muốn chỉ có thẻ p có att title mới được áp dụng, còn các thẻ khác mặc dù có title nh kp thẻ p thì k đc áp dụng, ta viết như sau:
+	p[title]{
+            color: green;
+        } lưu ý chỉ xét thẻ p có tồn tại att title là đủ
+-	Nếu muốn chỉ đích danh thẻ p nào có title = “baiviet” mới đc áp dụng thì ta viết như sau:
+	p[title="baiviet"]{
+            color: green;
+        } chỉ những thẻ p nào có att title="baiviet" mới được áp dụng
+
+Bài 20. bai-20-do-uu-tien-trong-css
+-	Độ ưu tiên giữa internal và external: như bài đã học về 2 cách viết css internal và external, cả 2 cách viết này đều có độ ưu tiên như sau, giả sử có cùng lúc 2 css internal và external viết thì nó sẽ được áp dụng css nằm sau.
+-	Cách tính điểm để xác định độ ưu tiên: 
+inline: 1000 - id: 100 - class: 10 - tagname: 1
+Điểm của 4 cách viết css trên tương ứng với mức độ ưu tiên, giả sử có cùng lúc nhiều hơn 1 cách viết css thì cách viết nào có điểm ưu tiên lớn hơn sẽ được áp dụng, k quan trong nằm ở trước hay sau. Nếu cách viết vận dụng từ 2 cách viết trở lên thì điểm sẽ được công thêm cho cách viết đó, giả sử thuộc tính được áp dụng bằng cách dùng inline và class thì điểm ưu tiên sẽ là 1010.
+<style>
+        /* 1 id + 1 id + 1 class = 100 + 100 + 10 = 210 */
+        #div1 #p1.para {
+            color: green;
+        }
+
+        /* 1 id + 1 class = 100 + 10 = 110 */
+        #p1.para {
+            color: pink;
+        }
+
+        /* 1 id = 100 */
+        #p1{
+            color: goldenrod;
+        }
+
+        /* 1 class = 100 */
+        .para{
+            color: blue;
+        }
+
+        /* 1 tag name = 1 nhưng nếu gán !important thì nó sẽ có mức độ ưu tiên số 1 */
+        p{
+            color: red !important;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <!-- /* 1 inline = 1000 */ -->
+    <p style="color: aqua;" class="para" id="p1">Xin chào bạn nha</p>
+</div>
+Cùng xem ví dụ ở trên để hiểu rõ cách sử dụng
+Bài 21. bai-21-cac-thuoc-tinh-trang-tri-van-ban
+-	Text-align: canh giữa, trái, phải hoặc đều: text-align: justify;
+-	Text-decoration:  text-decoration: overline; overline gạch trên, underline gạch dưới, line-through gạch giữa thân chữ
+-	Text-indent: Khoảng lùi của đoạn đầu dòng đầu tiên text-indent, vd: text-indent: 20px; 
+-	Text-shadow: đổ bóng: màu - tọa độ x - tọa độ y - độ mờ, vd kết hợp đổ bóng 3 màu cùng lúc cho đoạn văn bản: text-shadow: green 3px 3px 20px, yellow 3px 3px 10px, pink 3px 3px 5px;
+-	Text-transform: capitalize sẽ viết hoa tất cả các từ cái đầu tiên của tất cả các từ, lowercase biến tất cả thành dạng viết thường, uppercase in hoa tất cả, vd: text-transform: uppercase ;
+Bài 22. bai-22-cac-thuoc-tinh-trang-tri-chu-viet
+-	Font-style: italic, oblique  in nghiêng, normal là bình thường, vd: font-style: normal;
+-	Font-size: kích thước chữ,vd: font-size: 30px;
+-	Font-weight: thay đổi độ đậm nhạt, số càng to càng đậm, hoặc dùng chữ bold là tô đậm, vd: font-weight: bold
+-	Font-family: dùng font chữ khác nhau: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif. Nếu muốn sử dụng các font khác từ Google để làm phong phú thì làm như sau: gõ tìm kiếm: "google font", sau đó truy cập vào trang https://fonts.google.com/, lựa chọn font chữ sau đó bấm Download family để tải về, giải nén và tìm file có đuôi .ttf để thêm vào thư mục đang làm việc. Sau đó trong thẻ style gõ @font-face {
+            font-family: demo;
+            src: url(./RobotoMono-VariableFont_wght.ttf);
+            } với font-family có thể đặt tên tùy ý, src là đường dẫn, cuối cùng tại thuộc tính font-family của thẻ style, gõ tên đã đặt ở mục font-family ở @font-face, vd: font-family: demo; hoặc cơ bản nhất là: font-family: 'Times New Roman', Times, serif;
+
+-	
+-	Color, background-color: Lựa chọn các mã màu có sẵn hoặc truy cập https://www.webfx.com/web-design/color-picker/ sau đó chọn lựa và copy mã màu về, lưu ý mã màu phải có dấu # ở trước. Hoặc rê chuột vào màu có sẵn, nó sẽ hiển thị lên bảng màu để tùy ý kéo chọn màu
+color: rgb(28, 128, 36);
+           	background-color: #1e940f;
+Bài 23: Các đơn vị thường gặp trong css
+-	Đơn vị px: là đơn vị tuyệt đối, tức là k bh thay đổi khi thay đổi độ rộng của phần tử chứa nó
+-	Đơn vị %: đơn vị tương đối, phụ thuộc vào kích thước của phần tử chứa nó, giả sử tạo 1 div có độ rộng là 50% thì nó sẽ luôn thay đổi để bảo đảm chiếm 50% độ rộng của phần tử chứa nó
+-	Đơn vị rem: có kích thước gấp n lần so với thẻ chính (html), vd thẻ html có font-size bằng 16, đặt thẻ <p> có font-size = 2rem tức là bằng 32
+Bài 24: Cách đặt biến trong css
+-	Giới thiệu cách đặt biến trong CSS: 
+-	Tác dụng của việc đặt biến trong CSS: 
++ vd tạo 1 style cho các loại thẻ khác nhau với các đặc tính màu sắc, font-style, font-size giống nhau, trong thẻ style chỉ cần ghi tên các thẻ đó như sau:
+h1, p{color: green;}, 
++ nếu tạp style bằng cách gọi đến class của 1 thẻ thì ghi .bg{color: green;}, với bg là tên class của 1 thẻ <p> nào đó, vd: <p class="bg">. Nh nếu dự án có rất nhiều chỗ cần css thì k thể viết thủ công dài dòng như vậy mà phải dùng biến toàn cục, gán giá trị cho biến đó sau đó các thẻ khác muốn sử dụng biến đó thì gọi đến bằng cú pháp: var(tên biến), vd: color: var(--text-color);, sau này nếu có đổi màu thì chỉ cần đổi giá trị màu cho biến là được 
+Bài 25: Thuộc tính padding trong css
+1.	Giới thiệu về padding, cách xem padding bằng dev tool:padding là vùng đệm giữa nội dung của phần tử và border, bấm F12, chọn trỏ chuột để xem
+2.	Các cách viết sử dụng cho thuộc tính padding: nếu muốn set padding cho các hướng với các giá trị khác nhau thì dùng padding-<hướng> tương ứng, 
++ nếu cả 4 hướng đều áp dụng cùng 1 giá trị padding thì chỉ cần ghi: padding: xpx; 
++ nếu padding: xpx ypx; thì trên, dưới là x, trái phải là y, 
++ nếu padding: xpx ypx zpx; thì trên là x, y là trái, phải, z là dưới, nếu là padding: xpx ypx zpx tpx; thì nó sẽ áp dụng cho các hướng theo chiều kim đồng hồ, cách này ngắn gọn nhất
+Bài 26: Thuộc tính border trong css
+1.	Giới thiệu về border, cách xem border bằng dev tool: nó là viền kiểu trang trí bên ngoài cho phần tử bên trong nó (padding và nội dung của phần tử)
+2.	Các thuộc tính của border: border-width, border-style, border-color để áp dụng cho toàn bộ các cạnh, nếu chỉ muốn áp dụng cho cạnh cụ thể nào đó thì ghi: border-top-width, vd vậy.
+Cách ngắn gọn khi áp dụng border cho toàn bộ thẻ: border: 5px dashed red; các giá trị lần lượt là width, style và color
+Bài 27: Thuộc tính margin trong css
+1.	Tác dụng của margin, cách xem margin bằng dev tool: 
+2.	Các thành phần và cách sử dụng  margin: Cách viết gọn là: margin: xpx ypx zpx tpx; các cạnh sẽ được áp dụng như padding, nếu set margin: auto; thì nó sẽ đc canh giữa theo chiều ngang so với phần tử chứa nó
+Bài 28: Thuộc tính box-sizing trong css
+- box-sizing là một thuộc tính trong CSS được sử dụng để xác định cách kích thước của một phần tử được tính toán, bao gồm cả độ rộng và chiều cao, đối với các thuộc tính như width và height. Có hai giá trị chính cho box-sizing là content-box và border-box.
++ content-box (giá trị mặc định):
+Kích thước của phần tử chỉ tính toán từ nội dung bên trong (bao gồm cả lề và đường biên).
+Nếu bạn đặt width: 100px;, thì width sẽ chỉ áp dụng cho phần nội dung, không tính thêm đường biên và lề. 
++ border-box:
+Kích thước của phần tử tính toán từ nội dung, đường biên và lề.
+Nếu bạn đặt width: 100px;, thì width sẽ áp dụng cho tổng kích thước của phần nội dung, đường biên và lề.
+Bài 29: Thuộc tính back-ground trong css
+1.	Tìm hiểu về background-color: 
+2.	Tìm hiểu về linear-gradient
+3.	Tìm hiểu về background-image: 
++ background-image: linear-gradient(180deg, green, yellow); tạo ra màu nền có 2 màu, xanh chuyển sang màu vàng 180 độ, tức là xanh trên vàng dưới, 0 độ thì ngược lại, 90 độ thì xanh trái vàng phải
++ background-image: url(./demo.jpg); có thể dùng câu này để chèn 1 ảnh vào, tuy nhiên vì ảnh sẽ k vừa với kích thước của web nên sẽ lặp đi lặp lại nhiều ảnh để fill đầy web, việc của chúng ta là chỉ cho phép ảnh xuất hiện 1 lần thôi, 
+•	dùng thêm thuộc tính background-repeat: no-repeat; 
+•	dùng background-size: 100px 100px;  để set chiều rộng, chiều cao của ảnh, hoặc background-size: cover; để fill đầy phần tử chứa nó, nó sẽ đổ đầy bắt đầu từ góc trên bên trái xuống cho phù hợp với kích thước của trang web, lúc này cần set background-position: center; để nó fill đầy từ giữa ra xung quanh 
+•	dùng background-position: bottom; để set vị trí của ảnh trong phần tử chứa nó hoặc background-position: left top; là góc trên bên trái, góc dưới bên phải thì dùng right bottom
+Bài 30: Thuộc tính position trong css
+1.	Tìm hiểu về position absolute và relative: position: relative; áp dụng cho phần tử cố định, position: absolute; áp dụng cho phần tử động bên trong phần tử cố định đó, sau khi set thuộc tính thì set các vị trí của phần tử absolute như: right, left, bottom, top: npx; vd: right và bottom: opx; nó sẽ đc đặt ở góc dưới bên phải. Vậy nếu k set thuộc tính position: relative cho phần tử cố định  thì sao? lúc này phần tử absolute sẽ nhận thẻ body (trình duyệt) làm thẻ chứa nó, dẫn đến các vị trí đã set của nó sẽ căn cứ vào thẻ body 
+2.	Tìm hiểu về position sticky: giúp ghim phần tử đó luôn được hiển thị trong tầm mắt ng dùng khi ng dùng cuộn nội dung, tuy nhiên cần set vị trí top cho nó, 0px là gắn sát canh trên của trình duyệt, 10px sẽ cách cạnh trên của trình duyệt 10px, thường được dùng để tạo menu
+3.	Tìm hiểu về position fixed:giúp giữ 1 phần tử cố định vị trí trong trang web, cần set thêm vị trí cho nó, thường là bottom: 0px; và right: 0px;
+Bài 31: Tìm hiểu về pseudo class (lớp giả) trong css
+1.	Tìm hiểu về lớp giả :hover, khi rê chuột đến phần tử đc cài style hover, các thuộc tính đi kèm nó sẽ được kích hoạt: color làm thay đổi màu của phần tử, background-color giúp tạo màu nền cho phần tử
+2.	Tìm hiểu về lớp giả :active, tương tự như hover, lớp giả active cũng có các thuộc tính như hover nh chỉ được kích hoạt khi người dùng click chuột vào phần tử đó
+3.	Tìm hiểu về lớp giả first-child, last-child và nth-child, được sử dụng khi 1 lớp cha có nhiều lớp con bên trong và cần css cho chúng
++ first-child : Chọn phần tử con đầu tiên của một phần tử cha, vd thẻ tbody chứa nhiều thẻ tr, muốn tô màu xanh cho thẻ tr đầu tiên thì dùng tr:first-child{…}
++ last-child: tương tự như trên nhưng chỉ áp dụng cho phần tử cuối cùng
+Cần lưu ý rằng, dù css tên thẻ nào đó với 1 trong 2 lớp giả trên mà k gọi đến lớp cha của nó ở phía trước thì các thẻ đầu tiên hoặc cuối cùng của (các) lớp cha khác vẫn sẽ được áp dụng style tương tự. Ngoài ra, khi 1 thẻ cha chỉ có 1 thẻ con, và css có cả 2 lớp giả như trên được áp dụng cho thẻ con đó thì các thuộc tính của lớp giả first-child sẽ được áp dụng cho nó thay vì last-child. 
+Để chỉ định lớp con cụ thể của 1 lớp cha nào đó, khi gọi cần thêm tên lớp cha ở phía trước, vd: tbody tr:first-child{}, nó sẽ chỉ áp dụng các thuộc tính bên trong dấu ngoặc nhọn cho thẻ tr đầu tiên của thẻ tbody
++ nth-child: tương tự ta có tbody tr:nth-child(n) với n lớp con thứ n trong lớp cha tbody
++ tbody tr:nth-child(even): áp dụng cho các dòng chẵn
++ tbody tr:nth-child(odd): áp dụng cho các dòng lẻ
+Bài 32: Tìm hiểu về pseudo element trong css
+1.	Tìm hiểu về  ::before và ::after:
++ .<tên class của thẻ>::before{content: “nội dung cần thêm” color: <màu của nội dung> font-weight: <thuộc tính của nội dung>}, vì vậy nếu muốn thêm gì đó cho nhiều thẻ có cùng tên class, ta dùng cách này
++ .<tên class của thẻ>::after: y như ở trên, chỉ khác là nó đc đặt cuối
+Tât nhiên chúng ta có nhiều cách để gọi đến 1 css nào đó chứ k nhất thiết sử dụng tên class
+2.	Tìm hiểu về ::first-letter và ::first-line:
++ ::first-letter: vd: h2::first-letter: thường áp dụng cho ký tự đầu tiên của tiêu đề
++ ::first-line: .para2::first-line, áp dụng các thuộc tính cho dòng đầu tiên của thẻ có class là para2
+3.	Tìm hiểu về ::selection: khi bôi đen để chọn, màu chữ và màu nền sẽ chuyển sang màu khác
+Bài 33: Tìm hiểu về thuộc tính display trong css
+1.	Tìm hiểu về Display inline: nội dung của thẻ đến đâu thì sẽ hiển thị chừng đó chứ k chiếm k gian của trình duyệt, các thẻ span, strong sẽ như vậy
+2.	Tìm hiểu về Display block: dù nội dung của thẻ k fill đầy 1 dòng nh nó sẽ chiếm đủ 1 dòng dù  k sử dụng hết như thẻ p, div.
+Có thể css để thay đổi thuộc tính mặc định bằng cách điều chỉnh thuộc tính display: inline cho thẻ p, div và block cho thẻ span, strong
+Chúng ta có thuộc tính inline-block là sự kết hợp của 2 thuộc tính trên: hiển thị trên cùng 1 dòng và chiếm vừa đủ diện tích mà thẻ đó cần. Khi sử dụng thuộc tính này chúng ta có thể tùy chỉnh độ rộng và độ dài của thẻ
+3.	Tìm hiểu về Display none: ẩn phần tử khỏi trình duyệt, Các thuộc tính và sự kiện của phần tử vẫn được duy trì (nếu có)
+Bài 34: Tìm hiểu về thuộc tính display flex
+1.	Giới thiệu về thuộc tính display flex: Giới thiệu về thuộc tính display flex. Ở đây giả sử chúng ta có các thẻ h1 là tiêu đề, 1 thẻ nav với class=“nav”, thẻ nav này bao gồm 2 thẻ ul có class=”nav-list”, thẻ ul đầu tiên gồm 3 thẻ li, mỗi thẻ li chứa 1 thẻ a, thẻ ul thứ 2 chưa 2 thẻ li, mỗi thẻ li chứa 2 thẻ a, tất cả các thẻ đều có class=”nav-item”,
++ Thẻ nav: Nếu ta muốn các thay đổi css liên quan đến thẻ nav thì gọi đến class “nav
++ Thẻ nav-list:
++ Thẻ nav-item: Nếu ta muốn các thay đổi css liên quan đến thẻ li thì gọi đến class “nav-item”
++ Thẻ a trong thẻ li: Nếu ta muốn các thay đổi css liên quan đến thẻ a trong li thì gọi đến class .nav-item a{…}
+
+2.	Khái niệm flex-container: 
++ vậy thẻ nav ở trên chính là thẻ flex-container: thay đổi các thuộc tính ở thẻ lớn này sẽ ảnh hướng đến các thẻ con bên trong nó, nói cách khác, thẻ mà chứa các thẻ con bên trong sẽ được xem là thẻ container và các thẻ bên trong gọi là item. 
+Để tạo một container Flexbox, bạn sử dụng thuộc tính CSS display: flex; trên phần tử cha. Sau đó, các phần tử bên trong phần tử cha đó sẽ trở thành các flex item. Các thuộc tính khác của Flexbox như justify-content, align-items, và flex có thể được áp dụng để điều chỉnh cách các flex item được căn chỉnh và phân phối trong container.
++ và flex-item: ở trên, thẻ nav có 2 thẻ ul, để chia chúng nằm ở 2 phần trái, phải của trang web, trống ở giữa thì css thẻ nav như sau: justify-content: space-between, nếu thẻ nav có 3 thẻ ul thì chúng sẽ đc hiển thị ở 3 phần trái, giữa và phải. Thuộc tính justify-content chỉ áp dụng cho thẻ flex-container
+3.	Thuộc tính flex-basis: được áp dụng cho các thẻ flex-item để chỉ định phần diện tích mà mỗi item được phép sử dụng trong flex-container, vd: item có class .blog-2{ flex-basis: 30%;}
+4.	Thuộc tính flex-wrap
+5.	Khái niệm flex-container và flex-item:
+6.	Thuộc tính justify-content: ở bài trước, chúng ta đã sử dụng 1 đặc tính trong thuộc tính justify-content là space-between, lần này chúng ta sử dụng space-around cho thẻ flex-container để sxep các item bên trong nó, tuy nhiên để bảo đảm có khoảng không gian giữa các item trong container thì diện tích mà các item đó chiếm phải nhỏ hơn 100% (phần thừa đó sẽ được dùng chia làm khoảng cách giữa các item). 
++ justify-content: space-around;
+Các flex items sẽ được phân phối sao cho có một khoảng trống đều xung quanh mỗi item.
+Khoảng trống giữa các item cũng là bằng nhau và cuối cùng sẽ có một khoảng trống ở đầu và cuối container.
++ justify-content: space-evenly;
+Các flex items sẽ được phân phối sao cho có khoảng trống đều xung quanh và giữa chúng.
+Khoảng trống giữa các item và ở đầu/cuối container đều là bằng nhau.
+7.	Thuộc tính flex-basis: để set tỷ lệ mà item đó được phép sử dụng trong 1 container, vd : thẻ có class .blog-2{ flex-basis: 20%;)
+8.	Thuộc tính flex-wrap: các item sau khi set như trên sẽ hoạt động hoàn hảo nếu kích thước trang web luôn đủ chỗ cho chúng hiển thị theo chiều ngang,  nh nếu trang web bị thu nhỏ lại thì sao? thì chúng sẽ bị co cụm lại, do đó dùng thuộc tính flex-wrap: wrap; cho thẻ container để khi co cụm lại, các thẻ nằm phía sau sẽ được đẩy xuống dòng, ngược lại flex-wrap: wrap-reverse; sẽ làm các thẻ phía sau đẩy lên trên. 
+Bài 35: Tìm hiểu về media query: Bài này đã được ote ở máy ở nhà
+Bài 36: Giới thiệu về javascript
+1.	Vai trò của Javascript trong website: Để một ngôn ngữ lập trình website, đc tích hợp trong HTMl giúp website sống động hơn. Javascript giúp cho trải nghiệm web tốt hơn so với việc chỉ sử dụng HTML, CSS. Bên cạnh đó giúp tương tác với phía server để tạo ra các trang web động. Là ngôn ngữ cơ sở để phát triển các framework frontend phổ biến hiện nay như ReacJS, Angular
+Có 2 cách viết mã script:
+-	Cách 1: viết trực tiếp trong html thông qua thẻ script. Các câu lệnh javascript có hoặc k có dấu ;
++ Hàm console.log(), chúng ta có thể truyền vô số các đối số bên trong nó với kdl như:string, number,…vd: console.log("hello javascript", 10, "hello hanoi");
++ Hàm alert: cảnh báo hiển thị trong trang web
++ Hàm document.write: cho phép nó gọi đến nó bất kỳ thành phần nào trong html, vd:
+<p>Lorem ipsum dolor <span style="color: red;"><script>document.write("hello mày")</script></span> sit amet.</p> trong thẻ p trên đây chứa 1 thẻ span, bên trong thẻ span chứa 1 thẻ script, trong thẻ script lại chứa hàm document.write(“”)
+-	Cách 2: tạo 1 file <tên file>.js sau đó nhúng nó vào file html sau dùng lệnh <script src="./script.js"></script> để dẫn đến file .js cần gọi, trong trường hợp này src="./script.js tức là file script.js này có cùng đường dẫn với file html nên dùng dấu . cho tối giản
+Lưu ý: cần nhúng mà script hoặc viết trực tiếp thì mới chạy đc trên web.
+2.	Cách đưa code javascript vào HTML: đã nói ở trên
+3.	Một số hàm dựng sẵn trong javascript: đã nói ở trên
+4.	Cách tạo comment và bỏ comment trong javascript: Ctrl / hoặc Ctrl K C và Ctrl K U để bỏ comment
+Bài 37: Biến và kiểu dữ liệu:
+1.	Khái niệm, ý nghĩa, cách khai báo biến: 
+-	Dữ liệu sẽ đc lưu ở 1 vùng nhớ, thay vì nhớ địa chỉ vùng nhớ và gọi đến khi cần thì tên biến sẽ đại diện cho việc đó, ngắn gọn và dễ nhớ hơn
+-	Quy tắc đặt tên biến:
+-	 1. K bắt đầu bằng số, nh có thể chứa số
+-	 2. k đc trùng với các từ khóa
+-	 3. có phân biệt hoa/thường
+-	 4. Đặt theo cammelCase: ký tự đầu tiên của từ đầu tiên của tên biến viết thường, ký tự đầu tiên của chữ cái thứ 2 trở đi viết hoa
+-	 5. Đặt theo underscore: viết dấu gạch dưới trước tên biến
+2.	Các kiểu dữ liệu trong Javascript
+-	number: số nguyên (5) và số thực (9.5),vd: var number
+-	string, nằm trong nháy đơn hoặc nháy kép
+-	object: gồm 1 số loại như: 
++ Đối tượng, vd: var student = {StudentName: "Bob", Age: 15}; các thuộc tính của đối tượng student đc đặt trong dấu ngoặc nhọn gồm các thuộc tính StudentName và Age, tên thuộc tính thì nên viết hoa ký tự đầu tiên, 
++ Mảng, vd: var arrNumber = [2,3,4,5,];
++ null: var empty = null; 
+undefined, vd: var demo; khi khai báo 1 biến nh k gán giá trị nào cho nó thì nó là undefined
+-	Lấy ra kiểu dữ liệu của biến, dùng typeof,vd: 
+console.log("kểu dữ liệu của biến student là:", typeof student); để biết kdl của student
+Bài 38: Toán tử trong javascript
+1.	Các toán tử phép tính + - x / %: 
+// Cộng, trừ, nhân, chia, chia lấy dư, ++: cộng thêm 1, --: trừ đi 1
+var number1 = 10;
+var number2 = 3;
+number1 ++;
+number2 --;
+// Cách 1 dùng dấu ""
+console.log("Kết quả phép cộng: ", number1 + number2);
+// Cách 2: Dùng dấu `` (dấu ở dưới nút esc)
+console.log(`giá trị number1: ${number1}, giá trị number2: ${number2}`)
+numberA = number1++
+// Lưu ý: ở trên numberA sẽ bằng 10 vì biến number1 sẽ được gán cho biến numberA sau đó nó mới tăng lên giá trị
+numberA = ++number1
+// Ở trên đây number1 sẽ cộng thêm 1 đơn vị sau đó mới gán cho numberA
+// number1 = number1 + 5 viết cách khác là:
+number1 +=5
+Đối với các phép tính còn lại cũng áp dụng theo các quy tắc ở trên
+2.	Các toán tử so sánh:
+// 2. Toán tử so sánh
+// 2.1 So sánh bằng: ==, kq bên dưới sẽ là true vì cả 2 đều bằng 5, dùng 2 dấu = sẽ chỉ so sánh giá trị chứ k so sánh thêm về kdl
+var check = 5 == "5";
+console.log("Kết quả biến check: ", check)
+// 2.2 So sánh bằng cùng giá trị và kiểu dữ liệu: ===, kq ở dưới là false vì kdl number k thể bằng string
+var check = 5 === "5";
+console.log("Kết quả biến check: ", check)
+// 2.3 SO sánh khác giá trị !=: ở bên dưới trả về false vì 5 k khác giá trị với 5 
+var check1 = 5!= "5";
+console.log("Kết quả biến check: ", check1)
+// 2.4 SO sánh khác giá trị và khác kdl !==: kq bên dưới là true vì 2 số khác kdl dù cùng giá trị
+var check1 = 5!== "5";
+// 2.5 Lớn hơn >: kq bên dưới là true 6>5
+var check2 = 6>5;
+// 2.6 Lớn hơn hoặc bằng >=
+number1 +=5
+3.	Các toán tử logic
+// 3. Toán tử logic
+// 3.1 &&: phép trả về là true nếu 2 số hạng là true: a && b, kq bên dưới sẽ là true, nếu đối lại 1 biểu thức bị sai thì kq sẽ là false
+// biểu thức 9%3===0 so sánh kết quả của phép chia lấy dư 9%3 với 0, và nó cũng kiểm tra xem kết quả này có cùng kiểu dữ liệu và giá trị với 0 hay không
+var check3 = 9%3===0 && 9>3;
+// 3.2 || phép hoặc trả về true nếu 1 trong 2 số hạng là true: a || b
+var check3 = 9%3===0 || 9<3;
+// 2.9 Phủ định, trả về giá trị ngược với biểu thức !a
+Bài 39: Hàm trong javascript
+1.	Khái niệm hàm: là tập hợp những đoạn code để thực hiện một nhiệm vụ nào đó. Hàm có thể được gọi và tái sử dụng nhiều lần. Ví dụ thay vì mỗi lần tính diện thích hình vuông, ta phải viết các hàm tính toán, thì ta tạo 1 hàm, khi cần tính chỉ cần truyền đối số chiều dài, chiều rộng vào cho hàm là đc.
+2.	Cách khai báo và sử dụng hàm:
+-	Từ khóa function <tên hàm()>{thân hàm}, vd: function PrintInfo(){
+    console.log('Hello world')
+}
+// Ở trên là hàm fix cứng, tức k thể thay đổi được nội dung bên trong hàm
+Ta có thể yêu cầu người dùng cung cấp giá trị cho đối số của hàm như sau:
+function PrintInfo1(hihi){
+    console.log(hihi);
+}
+PrintInfo1('Xin chào nha')
+ở trên, hihi là đối số mà người dùng có thể truyền vào khi gọi đến hàm thay vì fix cứng giá trị 'Hello world' như ban đầu
+3.	Tính năng debug: yêu cầu chương trình dừng lại trước 1 dòng lệnh nào đó để xem từng dòng lệnh chạy bằng từ khóa debugger. Bấm F12 – Sources để xem cách các dòng lệnh chạy, bấm F10 để chạy từng dòng lệnh tiếp theo, để đi sâu vào từng dòng của hàm thay vì chỉ đi qua từng dòng như F10, ta dùng F11. Kết quả sẽ hiển thị trong cửa sổ Console. Để bỏ tính năng debug thì bỏ từ khóa debugger ra khỏi đoạn code.vd:
+
+function TinhSChuNhat(cd, cr){
+debugger
+    var kq = cd * cr;
+    return kq;
+}
+
+4.	Cách gắn hàm vào sự kiện: 
+Bài tập: tương tác với giao diện html, khi người dùng nhập vào các giá trị thì đưa giá trị đó vào hàm, gọi hàm và tính toán khi người dùng bấm nút, hiển thị kết quả lên web:
+Bài làm:
+-	Viết hàm tính dt hình chữ nhật:
+function TinhSChuNhat(cd, cr){
+    var kq = cd * cr;
+    return kq;
+}
+-	Viết 1 hàm Display():
+function Display(){
+    //Trong: var cd = document.getElementById('txt-cd').value
+//   document chính là chỉ đến file html.html và lấy giá trị phần tử có id = txt-cd. Tuy nhiên cần phải ép kiểu nó bằng hàm Number nếu k giá trị lấy về sẽ chỉ là dạng chuỗi
+    var cd = Number(document.getElementById('txt-cd').value);
+    // Dòng lệnh ở dưới Tương tự như đối với txt-cd
+    var cr = Number(document.getElementById('txt-cr').value);
+    
+    var result = TinhSChuNhat(cd,cr);
+    //Đoạn code bên dưới: .innetHTML nghĩa là Truy cập đến nội dung có id là txt-dt trong document, trong trường hợp hiện tại là thẻ span, nội dung bên trong thẻ span sẽ được gán cho biến result
+    document.getElementById('txt-dt').innerHTML = result;
+
+}
+-	Trong thẻ body của file html, viết code như sau:
+<body>
+    <label for="">Nhập chiều dài</label>
+    <input type="number" id="txt-cd">
+    <br>
+
+    <label for="">Nhập chiều rộng</label>
+    <input type="number" id="txt-cr">
+    <br>
+    <!-- //Đoạn code bên dưới là gán cho button 1 att onclick, khi người dùng bấm vào nút này sẽ gọi tới hàm Display -->
+    <button onclick="Display()">Tính diện tích</button> <span id="txt-dt"></span>
+
+    <script src="./java.js"></script>
+</body>
+Khi button Tính diện tích được click, nó sẽ gọi đến hàm Display(), hàm này sẽ tính toán và có kết quả là result, sau đó nó gọi đến thẻ có id ‘txt-dt’ và gán giá trị của result cho thẻ đó, kiểu nhờ người khác ra mặt, còn nó sẽ ẩn danh vậy. Vậy thẻ span ở trên sẽ có nhiệm vụ nhận giá trị từ hàm Display() và hiển thị lên. Cho nên khi đặt thẻ span ở bên phải thẻ button như ở trên, kết quả của thẻ span sẽ hiển thị bên phải thẻ button.
+Bài 40: Cấu trúc điều kiện if-else
+//1. Viết hàm nhận giá trị điểm của học sinh, nếu điểm <5 thì trả ra "kém", =5 trả ra "TB", >5 trả ra "Khá"
+Nhớ khai báo và return cho biến của hàm
+1.	Cấu trúc điều kiện IF ELSE:
+2.	Cấu trúc điều kiện IF-ELSE lồng nhau:
+3.	Toán tử 3 ngôi (cấu trúc if else rút gọn): áp dụng cho mệnh đề chỉ có 1 if và 1 else, thay vì viết như sau:
+function KiemTraTuoi(tuoi){
+    kq = "";
+    if (tuoi>=18) {
+        kq = "Đủ tuổi kết hôn"
+    }
+    else{
+        kq = "Không đủ tuổi kết hôn"
+    }
+    return kq;
+}
+Thì viết như sau:
+function KiemTraTuoi(tuoi){
+    return kq = tuoi<18 ? "Không đủ điều kiện kết hôn" : "Đủ điều kiện kết hôn";
+}
+Xem file bài tập để hiểu rõ hơn tại đây:   
+Bài 41: Cấu trúc điều kiện switch-case
+1.	Giới thiệu cấu trúc điều kiện switch-case: tương tự if-else nh ngắn gọn hơn, tất cả các trường hợp viết đc bằng switch-case đều có thể viết bằng if-else, nh chiều ngươc lại thì k hẳn, vd: 
+function KiemTraSo(so){
+    kq = "";
+    switch (so) {
+        case 200:
+            kq = "ok";
+            break;
+        case 401:
+            kq = 'unauthorized';
+            break;
+        case 403:
+            kq = 'forrbident';
+            break;
+        case 404:
+            kq = 'not found';
+            break;
+        case 500:
+            kq = 'server error';
+            break;
+        default:
+            kq = 'undefined';
+            break;
+    }
+    return kq;
+}
+Default là mặc định của hàm khi k có giá trị nào thỏa các giá trị đc cài đặt sẵn
+2.	Sự kiện on-change trong javascript
+<body>
+    <label for="hihi">Chọn mã</label>
+    <select onchange="HienThi()" id="hihi">
+        <option value="200">MÃ 200</option>
+        <option value="401">MÃ 401</option>
+        <option value="403">MÃ 403</option>
+        <option value="404">MÃ 404</option>
+        <option value="500">MÃ 500</option>        
+    </select>
+    <p id="spanne"></p>
+    <script src="./script.js"></script>
+Theo vd ở trên, ta có 1 thẻ select với 5 option được đưa ra, khi người dùng chọn 1 trong các option, nó sẽ gọi đến hàn HienThi() của file script.js, 
+function HienThi(){
+    var laygiatriInput = Number(document.getElementById('hihi').value)
+    var ketqua  = KiemTraSo(laygiatriInput);
+    document.getElementById('spanne').innerHTML = ketqua
+}
+Trong hàm HienThi() sẽ có gọi đến hàm KiemTraSo()
+Bài 42: Mảng trong Javascript
+1.	Khái niệm mảng, cách khai báo mảng: thay vì gán mỗi giá trị cho mỗi biến, ta đưa chúng vào trong mảng, các phần tử của mảng k nhất thiết phải có cùng kdl: string, number, object, null,vd cách tạo mảng:
+-	Cách 1: var traicay = new Array('cam', 'lê', 'táo', 34, {}, null); cách này làm chương trình chậm
+-	Cách 2: var ngonNguLapTrinh = ['C#', 'JS', 'Ruby', 'PHP', 'Python'];
+2.	Xác định độ dài của mảng, truy xuất đến phần tử trong mảng.
+console.log('Độ dài mảng trên là: ', ngonNguLapTrinh.length);
+console.log('Phần tử thứ 2 là: ', ngonNguLapTrinh[2]);
+3.	Kiểm tra một biến có phải là mảng hay không
+-	Cách 1: console.log('kdl của ngonNguLapTrinh là: ', typeof ngonNguLapTrinh); cách này cũng hoạt động, tuy nhiên vì có nhiều kdl cũng là object như: {}. Date, set, map, nên cách này chưa chính xác lắm
+-	Cách 2: console.log('kdl của ngonNguLapTrinh là: ', Array.isArray(ngonNguLapTrinh)); cách này sẽ trả về True hoặc False, dành để kiểm tra 1 biến có phải là 1 mảng hay k.
+Bài 43: Các phương thức của mảng
+Cho 1 mảng như sau: var ngonngu = ['hihi', 'haha', 'huhu', 'hehe'];
+1.	Phương thức ToString, Join:
+// toString(): Phương thức Chuyển mảng trên thành chuỗi, bắt buộc dùng dấu ","
+console.log(ngonngu.toString());
+// join: mặc định là dấu “,”, nh nó cho phép nối các phần tử trong mảng với nhau bằng các ký tự cụ thể, linh hoạt hơn
+console.log(ngonngu.join('-'));
+2.	Phương thức pop, push:
+// pop:Xóa đi phần tử cuối cùng và trả ra kết quả phần tử bị xóa
+console.log(ngonngu.pop());
+console.log(ngonngu);
+// push: thêm 1 hoặc nhiều phần tử vào cuối mảng, kết quả trả về là độ dài của mảng sau khi thêm
+console.log(ngonngu.push('hichic'));
+console.log(ngonngu);
+3.	Phương thức shift, unshift:
+// shift: xóa đi phần tử đầu tiên trong mảng và trả về phần tử bị xóa
+console.log(ngonngu.shift());
+console.log(ngonngu);
+// unshift: thêm các phần tử vào đầu mảng, gần giống push, và trả về độ dài của mảng sau khi thêm
+console.log(ngonngu.unshift('cuoi', 'khoc'));
+console.log(ngonngu);
+4.	Phương thức slice, concat:
+// slice(x,y): x,y số chỉ mục, x là vị trí bắt đầu cắt, y là vị trí kết thúc, vd: slice(1,3) sẽ cắt từ phần tử có index là 1, cắt đến trc phần tử có index là 3 (tức cắt chỉ mục 1 và 2). Kết quả trả về là mảng ngonngu mới đc tạo ra chỉ có 2 phần tử 1,2, mảng ban đầu giữ nguyên
+console.log(ngonngu.slice(1,3))
+console.log(ngonngu);
+// slice(0): thêm số 0 và slice để copy mảng ngonngu y hệt
+console.log(ngonngu.slice(0))
+// slice(-x,-y): slice cho phép lựa chọn hướng cắt các phần tử trong mảng, cắt tử trái qua phải nếu là số dương, ngược lại nếu là số âm. Kết quả như sau: phần tử cuối cùng của mảng được tính là 0, dịch sang trái là -1, -2, -3, vậy nó sẽ cắt từ phần tử -2 đến -1. Kết quả trả về là mảng ngonngu mới đc tạo ra chỉ có 2 phần tử -2,-1, mảng ban đầu giữ nguyên
+console.log(ngonngu.slice(-3,-1));
+console.log(ngonngu);
+// slice(x): nếu x khác 0 thì nó sẽ cắt từ phần tủ thứ x đến hết mảng
+console.log(ngonngu.slice(1));
+console.log(ngonngu);
+var hoaqua = ['táo', 'lê', 'đào', 'mận', 'dưa'];
+// concat("mảng cần nối"): Nối mảng hoaqua vào phía sau mang ngonngu
+console.log(ngonngu.concat(hoaqua));
+5.	Phương thức splice:
+// splice(x,y): x là chỉ mục của phần tử cần xóa, y là số lượng phần tử bị xóa, vd splice(1,2) nó sẽ xóa phần tử có chỉ số là 1 và xóa 2 phần tử, tính luôn phần tử thứ 1 đó. Kết quả trả về là mảng chứa (các) phần tử bị xóa
+console.log(ngonngu.splice(1,2))
+console.log(ngonngu);
+// splice(x,y, 'phần tử thay thế 1', "phần tử thay thế 2"): Xóa phần tử có chỉ mục là x, số lượng xóa là y và thay thế (các) phần tử bị xóa bằng (các) phần tử khác. Ngoài việc xóa linh hoạt, có thể dùng phương thức này để thay để phần tử. Kết quả trả về là mảng chứa (các) phần tử bị xóa
+console.log(ngonngu.splice(1,3, 'JAVA','AHIHI', 'lips'));
+console.log(ngonngu);
+6.	Phương thức sort, reverse:
+// sort: sắp xếp thứ tự các phần tử từ nhỏ đến lớn nếu mảng là số, từ a-z nếu mảng là string, lưu ý nếu trong mảng có chữ in hoa thì chữ in hoa được xếp đầu tiên, nếu có nhiều chữ in hoa thì sẽ xếp theo tiêu chí từ a-z
+console.log(ngonngu.sort());
+// reverse: đảo ngược vị trí các phần tử trong mảng, từ cuối lên đầu, từ đầu xuống cuối
+console.log(ngonngu.reverse());
+Bài 44: Chuỗi và các phương thức của chuỗi
+1.	Một số lưu ý khi tạo chuỗi, cách tạo chuỗi động:
+var  content = 'Xin chào bạn nha'
+//Với chuỗi ở trên, nếu cần thêm dấu nháy cho 1 phần tử nào đó của chuỗi ta thêm dấu nháy khác với dấu nháy bao bọc chuỗi, vd:
+var  content = 'Xin chào bạn "Huy" nha'
+//Ở trên Huy đc đặt trong dấu nháy kép, đưa dấu nháy kép ra ngoài, nháy đơn ở trong cũng đc
+var  content = 'Xin chào bạn "Huy" nha'
+//Để sử dụng cũng dấu nháy cho cả trong và ngoài ta thêm dấu \ vào trước mỗi dấu nháy bao bọc phần tử đó,vd:
+var  content = 'Xin chào bạn \'Huy\' nha'
+//Nếu cần thêm ký tự \ trong chuỗi có chứa phần tử trong dấu \\ như trên thì ta viết 2 dấu \\ liên tiếp:
+var  content = 'Xin chào \\ bạn \'Huy\' nha'
+
+//Để truyền biến vào chuỗi để tạo chuỗi động, dùng dấu `` ở 2 đầu chuỗi thay vì dấu nháy
+var fullname =  'Trần Dương Huy'
+var age = 30
+var address = 'HCM'
+console.log(`Họ tên là: ${fullname}, Tuổi là: ${age}, Địa chỉ là: ${address} `)
+2.	Xác định độ dài của chuỗi:
+//Với mỗi ký từ trong chuỗi (bao gồm khoảng trắng) sẽ được tính vào chiều dài của chuỗi
+var  content = 'Xin chào bạn nha'
+//Dùng cú pháp bên dưới để xem độ dài chuỗi
+console.log(content.length)
+3.	Phương thức indexOf và lastIndexOf
+//Dùng cú pháp sau để xem vị trí bắt đầu xuất hiện của ký tự đầu tiên của chuỗi nhỏ trong chuỗi lớn, giống như mảng, nó cũng sẽ tính từ vị trí thứ 0 cho ký tự đầu tiên (bao gồm cả khoảng trắng)
+console.log(content.indexOf('chào')) //Kết quả sẽ là 4
+//Nh giả sử trong chuỗi có ít nhất 2 lần xuất hiện từ chào thì ta sẽ thêm 1 đối số tìm kiếm từ vị trí mà bảo đảm chuỗi đó sẽ xuất hiện ở vị trí sau (các) vị trí đầu tiên
+console.log(content.indexOf('chào',5)) //ctrinh sẽ tìm kiếm chuỗi con "chào" từ index thứ 5 trong chuỗi lớn
+//Muốn tìm ra vị trí chuỗi con xuất hiện cuối cùng trong chuỗi lớn, ta dùng cú pháp sau
+console.log(content.lastIndexOf('chào'))
+//Trường hợp k tìm thấy chuỗi con trong chuỗi lớn, kết quả trả về sẽ là -1
+4.	Phương thức slice, replace
+//Cắt chuỗi con trong chuỗi lớn từ vị trí thứ 4 đến 5, kq trả về là chuỗi con đc cắt
+console.log(content.slice(4,6))
+//Muốn cắt từ vị trí thứ 4 đến hết, kq trả về là chuỗi con đc cắt
+console.log(content.slice(4))
+//Copy y nguyên chuỗi gốc (tức là cắt từ vị trí thứ 0)
+console.log(content.slice(0))
+//Thay thế chuỗi 'chào' thành chuỗi 'chào hihi' xuất hiện ở vị trí đầu tiên trong chuỗi lớn
+console.log(content.replace('chào', 'chào hihi'))
+//Thay thế toàn bộ chuỗi con trong chuỗi lớn từ 'chào' thành 'chào hihi'
+console.log(content.replace(/chào/g, 'chào hihi'))
+5.	Phương thức toUpperCase và toLowerCase:
+//Chuyển toàn bộ chuỗi thành viết hoa:
+content.toUpperCase()
+//Chuyển toàn bộ chuỗi thành viết thường:
+content.toLowerCase()
+6.	Phương thức trim, split
+//Cắt tất cả khoảng trắng ở đầu và cuối chuỗi
+content.trim()
+//Chuyển chuỗi thành mảng, kq trả về 1 mảng chỉ có 1 phần tử duy nhất, chính là chuỗi content, nh lúc này là dạng mảng chứ k còn là dạng chuỗi nữa
+content.split()  //kq là:  ['Xin chào bạn nha']
+//Chuyển chuỗi thành mảng nh tách các phần tử trong chuỗi bởi ký tự nào đó, vd dấu cách:
+content.split(' ') //kq là:  ['Xin', 'chào', 'bạn', 'nha'] vì ctrinh sẽ tách các phần tử nào được cách nhau bởi dấu cách, nếu chuỗi gốc là
+//'Xin-chào-bạn-nha' thì hàm cần viết sẽ là content.split('-')
+
+Bài 45: Object trong javascript
+1.	Cách tạo object trong JS:
+//Đây là 1 object với các pro fullname, age, address, Các property bên trong object cách nhau bởi dấu phẩy, muốn tạo pro email-address với dấu "-", thêm dấu ngoặc vuông cho nó [email-address]
+var student = {
+    fullname: 'Trần Văn Tuấn', 
+    age: 20, 
+    address:' Mỹ Đình',
+    [email-address]: 'huytd1@scb.com.vn'
+}
+// In ra object
+console.log(student);
+2.	Cách truy xuất đến các property trong object:
+// Truy xuất property adress
+console.log(student.adress); //gọi đến tên object - tên pro (khuyên dùng)
+console.log(student['adress']); //gọi đến tên object - tên pro dưới dạng string
+// Thay đổi giá trị bên trong object, vd gán lại giá trị cho age
+student.age = 19;
+console.log(student);
+// Thêm mới 1 pro tên score vào cuối object student
+student.score = 9.5;
+console.log(student);
+// Đưa giá trị của 1 biến thành 1 pro trong 1 object có sẵn, thay vì đưa Địa chỉ email vào thì ta dùng cách bên dưới, đưa tên biến vào trong dấu [], kq trả về là: {fullname: 'Trần Văn Tuấn', age: 20, adress: ' Mỹ Đình', Địa chỉ email: 'huytd1@scb.com.vn'}
+var email ='Địa chỉ email';
+var student = {
+    fullname: 'Trần Văn Tuấn', 
+    age: 20, 
+    adress:' Mỹ Đình',
+    [email]: 'huytd1@scb.com.vn'
+}
+console.log(student);
+// Để truy xuất giá trị của pro email trong object, vì nó là 1 biến bên ngoài object nên nó sẽ khác với việc gọi 1 pro có sẵn, có 2 cách:
+// Cách 1: gọi đến giá trị của biến email
+console.log(student['Địa chỉ email']);
+// Cách 2: gọi bằng tên biến, KHUYÊN DÙNG
+console.log(student[email]);
+3.	Cách xóa property trong object:
+// Xóa pro age trong object student:
+delete student.age;
+console.log(student);
+4.	Phương thức trong object
+// Phương thức trong object: về bản chất là 1 hàm, trong 1 object, chúng ta có thể truyền 1 pro dưới dạng 1 hàm vào, và 1 pro như vậy đc gọi là phương thức
+var student = {
+    fullname: 'Trần Văn Tuấn', 
+    age: 20, 
+    adress:' Mỹ Đình',
+    [email]: 'huytd1@scb.com.vn',
+    hello: function(){
+        return 'Hello world';
+    }, //đây là cách (1) để truyền 1 hàm làm phương thức trong 1 object 
+    GetInfo(){
+        return `tên: ${this.fullname} , tuổi: ${this.age}, địa chỉ: ${this.adress} `
+    } //đây là cách (2) để truyền 1 hàm làm phương thức trong 1 object 
+}
+// Gọi đến hàm hello, vì là hàm nên cần có cặp dấu ngoặc tròn ở sau
+console.log(student.hello());
+// Gọi đến hàm GetInfo, this chính là đại diện cho object student, vì hàm đang được viết trong object này nên dùng this.fullname nghĩa là fullname của object student này
+console.log(student.GetInfo());
+
+Bài 46: Object Constructor trong javascript
+1.	Khái niệm object-constructor: là 1 bản thiết kế của đối tượng, giúp cho việc tạo đối tượng được dễ dàng và thuận tiện hơn
+2.	Cách sử dụng object-constructor (obc): giả sử ta có các object student1 đến student<n> đại diện cho các học sinh, tuy nhiên, với số lượng student nhiều sẽ khiến việc tạo object cồng kềnh và tốn thời gian, obc sẽ tạo ra 1 bản thiết kế trc cho các object student, sau đó thì các student sẽ đc tạo ra theo bản thiết kế đó
+Obc sẽ đc tạo ra y hệt hàm, vd:
+function Student(fullname, age, score){
+this.fullname = fullname;
+this.age = age;
+this.score = score;
+this.getInfo = function(){
+    return `Fullname: ${this.fullname}, Age: ${this.age}, Score: ${this.score}`
+    }
+}
+var studen3 = new Student3("Trần Văn Tuấn", 19, 9);
+var studen4 = new Student4("Trần Văn Huy", 19, 9);
+So với việc tạo mỗi đối tượng student với các thuộc tính tương tự nhau thì chúng ta chỉ cần tạo ra 1 obc duy nhất, khi cần tạo mới 1 đối tượng từ obc đó thì chỉ cần làm như student3, student4
+Trường hợp cần thêm 1 thuộc tính khác nằm ngoài obc, vd: gender, ta dùng cú pháp: student3.Gender = "Nữ"
+	Bài 47: Các loại vòng lặp for trong javascript
+1.	Vòng lặp for thông thường:
+// VONG LẶP FOR
+for (var index = 1; index <= 5; index++) {
+    console.log(index)
+}
+
+var ngonngu = ['C#', 'php', 'java', 'js'];
+// index bắt đầu từ o đến index nhỏ hon chiều dài của mảng (array.length), vì index tính từ 0
+var length = ngonngu.length;
+
+for (var index = 0; index <= length - 1; index++) {
+    console.log(ngonngu[index])    
+}
+2.	Vòng lặp for/in:
+// VONG LẶP FOR IN
+
+// In ra index của các phần tử trong mảng (kp giá trị của phần tử nhé)
+for(var item in ngonngu){
+    console.log(item)
+}
+
+// in ra các giá trị phần tử trong mảng
+for(var item in ngonngu){
+    console.log(ngonngu[item])
+}
+// duyệt qua từng pro trong object
+var student = {
+    FullName: 'Trần Văn A',
+    Age: 15,
+    Score: 9.5
+}
+for(var item in student){
+    // In ra tên của pro
+    console.log(item)
+    // in ra giá trị của pro
+    console.log(student[item])
+}
+3.	Vòng lặp for/of:
+// VONG LẶP FOR OF: in ra giá trị các phần tử trong mảng, chủ yếu dùng cho mảng, 
+// khác biệt với for in cú pháp bên dưới sẽ in ra index trong mảng, còn for of sẽ in ra các giá trị phần tử trong mảng
+for(var item of ngonngu){
+    console.log(item)
+}
+
+//Bên dưới, ta đang thực hiện thêm các phần tử của mảng ngonngu vào chuỗi htmlStr qua mỗi lần lặp và hiển thị nó trong thẻ p
+var ngonngu = ['C#', 'php', 'java', 'js'];
+var htmlStr = '';
+for(var item of ngonngu){
+    htmlStr += `<p>${item}</p>`
+}
+document.getElementById('content').innerHTML = htmlStr;
+Bài 48: vòng lặp while, do while
+1.	Vòng lặp while:
+//A. VÒNG LẶP WHILE: kiểm tra điều kiện trước khi thực hiện lệnh
+//in trên chương trình
+var i = 1
+while (i <= 10) {
+    console.log(i)
+    i++;
+}
+
+//in trên trình duyệt
+// 1. Đây là body của thẻ html
+{/* <body>
+    <div id="content"></div>
+    <script src="./script.js"></script>
+</body> */}
+//2. Đây là code của file script.js
+var i = 1
+var html = '';
+while (i <= 10) {
+    html += '<p>${i}</p>' 
+    console.log(i);
+    i++;
+}
+document.getElementById('content').innerHTML = html
+2.	Vòng lặp do while:
+//B. VÒNG LẶP DO-WHILE: thực hiện lệnh sau đó mới kiểm tra điều kiện, do đó, vòng lặp này chắc chắn sẽ chạy ít nhất 1 lần, đây là điểm khác biệt với vòng lặp while
+var j = 5
+do {
+    console.log(j)
+    j++
+} while (j<5)
+3.	Sự khác nhau giữa while và do while
+Bài 49: Từ khóa break và continue
+1.	Ý nghĩa từ khóa break và cách sử dụng:
+//break: for in sẽ in ra giá trị của phần tử thứ item, nh nếu gặp phần tử (item) có index = 2 sẽ thoát vòng lặp
+//Cần lưu ý về việc sử dụng 2 hay 3 dấu =, 2 dấu = thì chỉ cần giống nhau giá trị, 3 dấu thì phải bằng cả kdl, mà item chỉ nhận kdl string, 2 là number nên 3 dấu = sẽ sai
+
+var fruit = ['cam', 'xoài', 'lê', 'táo']
+for (var item in fruit) {
+    if (item == 2) {
+        break
+    }
+    console.log(fruit[item])
+}
+2.	Ý nghĩa từ khóa continue và cách sử dụng:
+//continue: for in sẽ in ra giá trị của phần tử thứ item, nh nếu gặp phần tử (item) có index = 2 sẽ bỏ qua phần tử đó và tiếp tục vòng lặp
+//tức là nó sẽ bỏ qua dòng console.log(fruit[item]) và tiếp tục vòng lặp đến item == 3 khi gặp 'lê' (item == 2)
+var fruit = ['cam', 'xoài', 'lê', 'táo']
+for (var item in fruit) {
+    if (item == 2) {
+        continue
+    }
+    console.log(fruit[item])
+}
+Bài 50: Các phương thức làm việc với array - phần 2
+1.	Phương thức every, some
+-	Every:
+//hàm every nhận vào đối số là 1 hàm, hàm đó sẽ có 1 biến tạm, nhận vào đối số là các phần tử trong mảng, mỗi lần lặp qua phần tử nó sẽ gán cho biến item
+var everyResult = products.every(function (item) {
+  return item.Price > 500; //item trong 1 mảng là 1 object, do đó item.Price chính là truy cập vào thuộc tính Price, ctrinh sẽ duyệt qua toàn bộ item, nếu item nào có Price "K LỚN HƠN 500" nó sẽ return false
+})
+console.log('kết quả của everyResult: ', everyResult)
+-	Some:
+//hàm some: chỉ cần có 1 trong các item thỏa mãn điều kiện thì trả về true, nếu k có item nào thỏa đk thì trả về false
+var someResult = products.some(function (item) {
+  return item.Price > 5000;
+})
+console.log('kết quả của someResult: ', someResult)
+2.	Phương thức find, filter
+-	Find:
+//hàm find: trả về kq của 1 item (bao gồm cả các thuộc tính) nào đó trong mảng thỏa mãn 1 đk nào đó cho trc
+//vd: bên dưới sẽ trả về item đầu tiên có thuộc tính Price === 2000
+var findResult = products.find(function(item){
+  return item.Price ===2000
+}) //tuy nhiên pt này chỉ trả về phần tử đầu tiên thỏa đk, các pt khác thỏa đk sẽ k trả về
+console.log('kết quả của findResult: ', findResult)
+-	Filter:
+//hàm filter: trả về kq 1 mảng chứa các item (bao gồm cả các thuộc tính) nào đó trong mảng thỏa mãn 1 đk nào đó cho trc
+//vd bên dưới sẽ trả về 1 mảng chứa các item có thuộc tính Price === 2000
+var filterResult = products.filter(function(item){
+  return item.Price ===2000
+})
+console.log('kết quả của filter: ', filterResult)
+3.	Phương thức foreach
+//hàm forEach: duyệt qua các item và in chúng lên trình duyệt bằng chuỗi động
+var html = '';
+products.forEach(function(item){
+html += 
+`<div>
+<h3>Tên sản phẩm: ${item.ProductName}</h3>
+<p>Giá sản phẩm: ${item.Price}</p>
+<p>Mã số sản phẩm: ${item.Id}</p>
+</div>`
+})
+document.getElementById('content').innerHTML = html
+
+Bài 51: Cách dùng hàm map để làm việc với mảng
+1.	Giới thiệu hàm map:Hàm map đc dùng để tạo ra một mảng mới từ mảng đã có sẵn:
+//Tạo ra 1 mảng mới từ mảng product ở trên (trong tài liệu muốn xem thì mở file ra) nh thêm 1 thuộc tính Ngày sản xuất
+//vd: ta dùng hàm map để thêm thuộc tính Ngày_sản_xuất cho tất cả item trong mảng trên, chúng ta có thể thêm nhiều thuộc tính khác nếu muốn 
+//ngoài việc nhận item làm đại diện cho phần tử trong mảng, hàm map có thể nhận thêm 1 đối số khác với vai trò là index của phần tử trong mảng
+
+var mapResult = products.map(function(item, chi_muc){
+  return{
+    Index: chi_muc, //đại diện cho index
+    Mã: item.Id,
+    Tên_sản_phẩm: item.ProductName,
+    Giá: item.Price,
+    Ngày_sản_xuất: 2020, //thuộc tính thêm mới
+    Info: `Tên sản phẩm: ${item.ProductName}, Giá sản phẩm: ${item.Price}` //thuộc tính thêm mới
+  }
+})
+2.	Cách sử dụng hàm map để đổ dữ liệu lên trang web:
+//hiển thị thông tin bằng hàm map: hàm map sẽ trả về một mảng các chuỗi HTML, để hiển thị nó trong thẻ html, cần chuyển thành dạng chuỗi bằng hàm join()
+var html = products.map(function(item){
+  return `<div>
+        <h3>Tên sản phẩm: ${item.ProductName}</h3>
+        <p>Giá sản phẩm: ${item.Price}</p>
+        <p>Mã số sản phẩm:${item.Id}</p>
+    </div>`
+})
+document.getElementById('content').innerHTML = html.join(" ")
+Bài 52: Các cách để chọn phần tử bằng js
+1.	getElementById(): lấy elemment bằng id, đã thực hành nhiều
+2.	getElementByTagName():
+//getElementsByTagName: lấy ra tất cả thẻ p thì đưa chữ p vào làm đối số của hàm này 
+//kq trả về là 1 HTMLCollection chứa tất cả thẻ p dưới dạng "index:p", nó gần giống mảng nh k có các phương thức như some, find, map, for each, 
+//để xem nội dung của thẻ p ta cần thêm index khi gọi đến biến chứa HTMLCollection, vd để xem nội dung thẻ p có index là 2, ta gõ: pElement[2]
+var pElement = document.getElementsByTagName('p');
+console.log(pElement[2]);
+3.	getElementByClassName()
+//getElementsByClassName: thay vì dùng id thì ta dùng tên class, vd bên dưới là tìm các thẻ có class tên là para, kd trả về cũng là 1 HTMLCollection chứa các phần tử dưới định dạng "<index>:<tên thẻ><tên class>"
+//để xem nội dung của thẻ p có classs para, ta cần thêm index khi gọi đến biến chứa HTMLCollection, vd để xem nội dung thẻ p có index là 0, ta gõ: paraElement[0]
+var paraElement = document.getElementsByClassName('para');
+console.log(paraElement[0]);
+4.	querySelector() và querySelectorAll()
+-	querySelector():
+//querySelector: 
+//lấy ra 1 phần tử có class tên para
+var paraElement1 = document.querySelector('.para');
+console.log(paraElement1[1]);
+
+//lấy ra thẻ p đầu tiên nằm trong thẻ có id là div-1 
+var pInDiv = document.querySelector('#div-1 p');
+console.log(pInDiv)
+
+//lấy ra thẻ li đầu tiên của thẻ có class là nav
+var selectedLi = document.querySelectorAll('.nav li')
+console.log(selectedLi)
+
+//lấy ra thẻ li cuối cùng của thẻ có class là nav (sử dụng lớp giả)
+var selectedLi = document.querySelectorAll('.nav li:last-child')
+console.log(selectedLi)
+
+//lấy ra thẻ li ở vị trí thứ 3 (kp index) của thẻ có class là nav (sử dụng lớp giả)
+var selectedLi = document.querySelectorAll('.nav li:nth-child(3)')
+console.log(selectedLi)
+-	querySelectorAll():
+//querySelectorAll: 
+//lấy ra tất cả phần tử có class tên para và trả về 1 NoteList chứa các phần tử, cách truy xuất các phần tử cũng giống như mảng
+var paraElement2 = document.querySelectorAll('.para');
+console.log(paraElement2[1]);
+
+//lấy ra tất cả thẻ p nằm trong thẻ có id div-1 và trả về 1 NoteList chứa các phần tử, cách truy xuất các phần tử cũng giống như mảng
+var paraElement2 = document.querySelectorAll('#div-1 p');
+console.log(paraElement2[1]);
+Bài 53: Sự kiện trong javascript
+1.	Một số sự kiện trong javascript: click, input, change
+2.	Gán sự kiện bằng attribute
+<body>
+    <!-- Tạo 1 hàm với javascript như sau:
+    function GetValue(value){
+    console.log(value);}
+    -->
+    <!-- Thực hiện trong thẻ body của file html như sau -->
+    <!-- trong trường hợp này, khi sự kiện click xảy ra, hàm GetValue() sẽ đc gọi và lấy title của button "Lấy tiêu đề" truyền vào hàm, kq hàm sẽ nhận "thông tin học sinh" làm đối số và in ra console, this chính là ám chỉ button này  -->
+    <!-- button --> 
+    <button onclick="GetValue(this.title)" id="btn-GetTitle" title="thông tin học sinh">Lấy tiêu đề</button>
+    <hr>
+    <!-- trong trường hợp này, khi sự kiện input xảy ra, hàm GetValue() sẽ đc gọi và lấy giá trị ĐANG đc input vào để truyền vào hàm, kq hàm sẽ nhận làm đối số và in ra console theo từng ký tự mà ng dùng nhập, mỗi lần nhấn thêm 1 ký tự, nó sẽ in ra 1 dòng mới, this chính là ám chỉ giá trị (value) đc nhập vào ô input này  -->
+    <!-- input -->
+    <label  for="txt-StudentName">Tên học sinh</label>
+    <input oninput="GetValue(this.value)"  type="text" id="txt-StudentName">
+    <hr>
+
+    <!-- tương tự, khi ng dùng chọn 1 trong các option trong thẻ select, sự kiện onchange xảy ra, giá trị đc chọn sẽ đc truyền vào hàm GetValue() và in nó ra console -->
+    <!-- select -->
+    <label for="txt-Class">Lớp</label>
+    <select onchange="GetValue(this.value)"  name="" id="txt-Class">
+        <option value="10A">10A</option>
+        <option value="10B">10B</option>
+        <option value="10C">10C</option>
+        <option value="10D">10D</option>
+    </select>
+
+    <script src="./script.js"></script>
+</body>
+3.	Gán sự kiện bằng DOM event: thay vì viết các sự kiện trực tiếp trong từng thẻ khi xảy ra sự kiện với thẻ đó + hàm bên javascript, ta sẽ viết hoàn toàn ở js như sau:
+// không cần thêm cặp dấu ngoặc tròn () ở cuối tên hàm GetValue1 khi bạn gán nó cho sự kiện onclick, vì bạn không muốn gọi hàm ngay lập tức, mà chỉ muốn định nghĩa hàm để được gọi sau khi sự kiện xảy ra.
+//GetValue1 là một hàm không có tham số. Khi bạn gọi nó bằng cách viết GetValue1(), nó sẽ thực hiện các lệnh bên trong mà không cần thông tin từ bất kỳ biến nào được truyền vào.
+//do đó, hàm GetValue1() không cần có bất kỳ biến nào được chỉ định trong dấu ngoặc đơn ()
+//gán tham chiếu của hàm cho sự kiện onclick khác với việc gọi hàm trực tiếp. Dưới đây là sự khác biệt giữa hai cách này:
+// Gán tham chiếu của hàm cho sự kiện onclick:
+// Khi bạn gán tham chiếu của hàm cho sự kiện onclick, bạn chỉ định rằng hàm đó sẽ được gọi khi sự kiện xảy ra, không phải là gọi ngay lập tức.
+// Khi sự kiện xảy ra (ví dụ: khi người dùng nhấp vào nút), hàm sẽ được gọi và thực thi.
+
+// Gọi hàm trực tiếp:
+// Khi bạn gọi hàm trực tiếp, hàm sẽ được thực thi ngay lập tức tại thời điểm gọi.
+// Điều này có nghĩa là không cần phải có sự kiện nào xảy ra để kích hoạt hàm, và hàm sẽ được gọi ngay lập tức trong luồng thực thi của chương trình.
+//cách này sẽ giúp chúng ta chỉ cần viết bằng js thôi
+function GetValue1(){
+   console.log(this.title) ;
+}
+var button = document.querySelector('#btn-GetTitle')
+button.onclick = GetValue1
+
+//tương tự như trên, mỗi khi người dùng nhập vào trường văn bản, hàm GetValue2 sẽ được gọi để in ra giá trị của trường văn bản đó (giá trị value của nó). Điều này giúp bạn theo dõi các thay đổi trong trường văn bản một cách tức thì và thực hiện các hành động tương ứng.
+function GetValue2(){
+    console.log(this.value) ;
+}
+var studentName = document.querySelector('#txt-StudentName')
+studentName.oninput = GetValue2
+
+//tương tự như trên, nh khác là sự kiện onchange xảy ra thì hàm sẽ đc gọi
+function GetValue3(){
+    console.log(this.value) ;
+}
+var studentClass = document.querySelector('#txt-Class')
+studentClass.onchange = GetValue3
+4.	Gán sự kiện bằng eventlistener
+//thay vì viết như cách 2 thì dùng phương thức addEventListener, ghi tên sự kiện ở đối số thứ 1 (event ), đối số thứ 2 (function ) là tên hàm cần gọi (chúng ta có thể viết hàm ngay đối đố thứ 2 này luôn)
+var button = document.querySelector('#btn-GetTitle');
+button.addEventListener('click', GetValue1)
+var studentName = document.querySelector('#txt-StudentName');
+studentName.addEventListener('input', GetValue2)
+var studentClass = document.querySelector('#txt-Class');
+studentClass.addEventListener('change', GetValue2)
+5.	Trang tham khảo các sự kiện khác
+https://www.w3schools.com/jsref/dom_obj_event.asp
+Bài 54: Làm việc với attribute
+1.	SetAttribute()
+2.	GetAttribute()
+//vd1: Đây là cách lấy phần tử HTML có id là btn-who bằng cách sử dụng phương thức document.querySelector(). Phương thức này chọn phần tử đầu tiên mà nó tìm thấy trong tài liệu HTML phù hợp với một bộ chọn CSS được cung cấp (trong trường hợp này, #btn-who đề cập đến một phần tử có id là btn-who) và gán nó cho biến btn.
+var btn = document.querySelector('#btn-who')
+
+//Đây là phương thức addEventListener, được gọi trên phần tử HTML đã được chọn trước đó. Nó gán một hàm xử lý cho sự kiện click của phần tử đó. Trong trường hợp này, khi người dùng nhấp vào phần tử btn, hàm xử lý được cung cấp sẽ được gọi.
+//function (){...}: Đây là hàm xử lý sự kiện được cung cấp. Nó là một hàm không tên (còn được gọi là hàm vô danh hoặc hàm ẩn danh), nghĩa là nó không có tên và chỉ được sử dụng trong phạm vi của phương thức addEventListener. Bên trong hàm này, có hai câu lệnh được thực thi:
+btn.addEventListene('click', function (){
+    //Câu lệnh này in ra giá trị của thuộc tính title của phần tử được nhấp vào (trong trường hợp này là phần tử có id là btn-who). Phương thức getAttribute() được sử dụng để lấy giá trị của thuộc tính title.
+    console.log(this.getAttribute('title'))
+    //Câu lệnh này đặt lại giá trị của thuộc tính title của phần tử được nhấp vào thành "từ viết tắt của tổ chức y tế thế giới". Phương thức setAttribute() được sử dụng để thiết lập giá trị của thuộc tính title.
+    this.setAttribute('title', 'từ viết tắt của tổ chứ y tế thế giới')}
+    )
+//vd 2 về việc sử dụng getAttribute: đối với biến btn ở trên, khi xảy ra sự kiện click, hàm GetNote sẽ đc gọi, nó lấy attribute tên data-note và in giá trị của data-note ra cửa sổ console
+btn.onclick = GetNote
+function GetNote(){
+    var note = this.getAttribute('data-note')
+    console.log(note)
+}
+
+//vd 3: khi người dùng nhấp vào hình ảnh, sự kiện click sẽ được kích hoạt và hàm ChangeImage sẽ được gọi. Hàm này sẽ thay đổi giá trị của thuộc tính src của hình ảnh đó thành "/images/2.png", dẫn đến việc thay đổi hình ảnh hiển thị trên trang.
+//lưu ý ở hàm này chúng ta k cần gọi đến getAttribute mà có thể set luôn giá trị mới cho attribute src của thẻ img
+var image = document.querySelector('img')
+image.onclick = 
+function ChangeImage(){
+    this.setAttribute('src','/images/2.png')
+}
+Bài 55: Dùng js để tương tác với css của phần tử
+Trong bài này, chúng ta sẽ tìm hiểu cách sử dụng js để tương tác với css của phần tử.
+//Thay vì tạo thẻ style trong thẻ head cho các thẻ trong thẻ body, chúng ta có thể sử dụng JavaScript để làm việc đó bằng cách sử dụng code bên dưới, bấm F12 để xem, kq trả về là 1 CSSStyleDeclaration, trong này chứa rất nhiều thuộc tính css, lựa chọn để set cho thẻ html
+//cần lưu ý tên thuộc tính css trong thẻ style trong thẻ head file html sẽ có cách viết khác so với tên thuộc tính trong js, vd: khác nhau dấu _,...nên để chắc chắn, chúng ta vào F12 copy về cho chính xác
+var element = document.querySelector('#div-1')
+var css_for_html = element.style
+console.log(css_for_html)
+//Cách 1: gọi đến tên tên biến css_for_html và gán các thuộc tính cho nó, nh nếu chúng ta cần gán nhiều thuộc tính thì cách này sẽ làm việc viết code trở nên dài dòng
+css_for_html.width = '200px'
+css_for_html.height = '200px'
+css_for_html.backgroundColor = 'yellow'
+
+//Cách 2: dùng phương thức assign với Object, chỉ định Object ở đối số đầu tiên của phương thức, sau đó là các thuộc tính
+Object.assign(css_for_html,
+    {
+        width: '200px',
+        height: '200px',
+        backgroundColor: 'yellow'
+    })
+Bài 56: Làm việc với classlist
+1.	Giới thiệu về thuộc tính classlist
+//Classlist là 1 thuộc tính của phần tử HTML, chúng ta có thể dùng js để truy cập và làm việc với attribute class của phần tử HTML thông qua thuộc tinh này
+2.	Một số hàm để làm việc với classlist: add, remove, contain, toggle
+//biến div đại diện cho thẻ button có id là div-1, khi bấm vào, F12 sẽ thấy kq trả về là 1 mảng chứa các class của thẻ này, tức là (các) attribute class đc khai báo trong thẻ button
+
+//phương thức add: sử dụng phương thức add của classList để thêm 1 class mới cho thẻ button ở trên,, đối số nhận vào sẽ là tên của class mà ta muốn add vào
+//phương thức remove: gược lại hàm add là hàm remove, xóa bỏ 1 class trong thẻ button
+//phương thức toggle: sẽ kiểm tra xem class para đã có trong thẻ button chưa, nếu chưa có thỉ thêm vào, nếu có rồi thì xóa đi, cứ lặp lại mỗi lần phát sinh sự kiện click vào button
+//phương thức contains: kiểm tra xem 1 class đã có trong thẻ button hay chưa, kq trả về là true hoặc false
+function wwClassList(){
+    var div = document.querySelector('#div-1')
+    console.log(div.classList)
+    // div.classList.add('para')
+    div.classList.toggle('para')
+    div.classList.remove('cover1')
+    console.log(div.classList.contains('cover'))
+}
+Bài 57: Một số đối tượng dựng sẵn
+1.	Cách sử dụng đối tượng Date
+//lấy ra full giờ-phút-giây ngày -tháng-năm múi giờ tại thời điểm truy vấn
+var date = new Date();
+console.log(date) //biến date chứa full thông tin thời gian ở trên
+console.log(date.getFullYear()) //trả về giá trị "năm" từ biến date
+//hàm này trả về tháng từ 0 đến 11, 0 sẽ là t1, 11 sẽ là t12, do đó cuối hàm phải +1
+console.log(date.getMonth() + 1) 
+console.log(date.getDate()) //trả về giá trị "ngày" từ biến date
+console.log(date.getHours()) //trả về giá trị "giờ" từ biến date
+console.log(date.getMinutes()) //trả về giá trị "phút" từ biến date
+console.log(date.getSeconds()) //trả về giá trị "giây" từ biến date
+console.log(date.getMilliseconds()) //trả về giá trị "mili giây" từ biến date
+2.	Cách sử dụng đối tượng Math
+console.log(Math.PI) //lấy ra số PI khá dài
+console.log(Math.round(5.5)) //trả về số nguyên gần cận trên/dưới nhất, 5.5 sẽ thành 6
+console.log(Math.ceil(5.001)) //trả về số nguyên lên cận trên,k quan tâm số ở sau là số mấy, 5.1 sẽ thành 6
+console.log(Math.floor(5.999)) //trả về số nguyên lên cận dưới,k quan tâm số ở sau là số mấy, 5.999 sẽ thành 5
+console.log(Math.random()) //trả về 1 giá trị ngẫu nhiên trong khoảng từ 0.1 và 1
+console.log(Math.round(Math.random()*100)) //trả về 1 giá trị ngẫu nhiên trong khoảng từ 0.1 và 100
+console.log(Math.pow(2, 3))//hàm tính lũy thừa, đối số thứ nhất là số cơ sở , đối số thứ 2 là số mũ, đây là 2 mũ 3
+console.log(Math.sqrt(9)) //hàm tính căn bậc 2, đối số là số cần tính căn (9 căn bậc 2 là 3)
+console.log(Math.abs(-5)) //hàm tính giá trị tuyệt đối, đối số là số cần tính giá trị tuyệt đối
+console.log(Math.min(1,2,3,4,5,6,7,8,9)) //trả về giá trị nhỏ nhất trong các đối số, sl đối số = 0 sẽ trả về Infinity
+console.log(Math.max(1,2,3,4,5,6,7,8,9)) //trả về giá trị lớn nhất trong các đối số, sl đối số = 0 sẽ trả về -Infinity
+Bài 58: Làm việc với json
+1.	Khái niệm về JSON: Là một chuỗi string, viết tắt của Javascript Object Notation. Json là một định dạng được sử dụng để truyền tải dữ liệu giữa các ngôn ngữ lập trình với nhau khi phát triển web mô hình API, điều này cho phép chúng ta viết backend bằng nhiều ngôn ngữ khác nhau nh frontend vẫn hiểu đc.
+2.	Chuyển từ JSON sang kiểu dữ liệu của JS dùng JSON.parse()
+//Chuyển các kdl JSON sang JS: dùng hàm parse và phải bảo đảm các nguyên tắc bên dưới
+var hehe= "5" //số: đc đặt trong nháy đơn hoặc nháy kép
+var haha = '"haha"' //chuỗi: được đặt trong nháy kép với nháy đơn bao ở ngoài
+var mang = '["php", "java", 5]' //mảng, các phần tử phải được đưa vào trong dấu ngoặc kép, số trong mảng k cần đưa vào trong dấu " "
+var object = '{"studentName": "Anna", "Age": 25}' //obj: toàn bộ obj phải đc đặt trong dấu nháy đơn, các thuộc tính trong object phải đc đặt trong dấu "", số thì k cần
+var hihi = 'true' //boolean: true hoặc false sẽ có kdl là boolean
+var nun = 'null' //null: ép ra giá trị null, kdl là obj
+var undefined = 'undefined' //nó sẽ báo lỗi, chuỗi JSON sẽ k nhận đc giá trị undefined 
+var data = JSON.parse(undefined)
+console.log(undefined, typeof data)
+3.	Chuyển các kiểu dữ liệu từ JS sang Json dùng JSON.stringify()
+//Chuyển các kdl từ JS sang JSON:dùng hàm stringify và phải bảo đảm các nguyên tắc bên dưới
+var so = 5.75 //số: sẽ đc chuyển thành chuỗi của JSON
+var chuoi = 'hello' //chuỗi: sẽ được chuyển thành chuỗi của JSON
+var mang1 = [9, 10, true, 'hello'] //mảng: sẽ được chuyển thành chuỗi của JSON
+var obj1 = {họten: 'huy', tuoi: 25} //obj: sẽ được chuyển thành chuỗi của JSON
+var boolean = 'true' //boolean: true chuyển thành chuỗi của JSON
+var nun1 = 'null' //null: null chuyển thành chuỗi của JSON
+var json1 = JSON.stringify(nun1)
+console.log(nun1, typeof json1)
+Bài 59: Giới thiệu bootstrap
+1.	Giới thiệu thư viện bootstrap: Bootstrap là một thư viện bao gồm các HTML, CSS và JavaScript dùng để phát triển website chuẩn resonsive (hiển thị website ở các thiết bị khác nhau 1 cách hài hòa, phù hợp như TV, Điện thoại, Máy tính). Bootstrap cho phép quá trình thiết kế website diễn ra nhanh chóng và dễ dàng hơn dựa trên những thành tố cơ bản có sẵn như typography, forms, buttons, tables, grids, navigation, image carousels…
+Có Bootstrap từ 1-5, nhưng phiên bản 4 đc sử dụng nhiều
+2.	Cách sử dụng bootstrap:
+<!-- Bấm b4 - tab để tạo tự động khung html có sử dụng thư viện Bootstrap -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bên dưới là các thành phần cần thiết để sử dụng Bootstrap  -->
+    <!-- 1. Bootstrap CSS: thay vì dùng đường dẫn  -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+  </head>
+  <body>
+    <!-- 2. Ba file JavaScript: khi B4 tạo tự động, 3 file này đc đặt trong các đường dẫn trực tiếp đến server chưa, chúng ta sẽ tải về và sử dụng đường dẫn tương đối để đưa vào-->
+    <!-- 2.1 Thư viện jQuery của Javascript: Phiên bản slim.min bên dưới chưa đầy đủ, sẽ thiếu  1 số tính năng, khi học về thư viện jquery sẽ cần học đầy đủ hơn-->
+    <script src="./jquery-3.3.1.slim.min.js"></script> 
+    <!-- 2.2 File Popper.js sẽ sử dụng 1 số hàm của jQuery -->
+    <script src="./popper.min.js"></script>
+    <!-- 2.3 File Bootstrap JS sẽ sử dụng 1 số hàm của jQuery -->
+    <script src="./bootstrap.min.js"></script>
+  </body>
+</html>
+Bài 60: Cấu trúc lưới trong bootstrap (grid system)
+1.	Cách tạo ra cấu trúc lưới trong bootstrap
+<!-- container sẽ có 2 khoảng lề 2 bên trình duyệt, container-fluid sẽ tràn đầy trình duyệt -->
+    <!-- Tùy từng kích cỡ màn hình mà chtrinh cho phép chia  -->
+    <!-- Cột: Hiển thị 4 khối trên mỗi hàng khi màn hình có độ rộng từ 992px trở lên (kích thước medium, md trở lên), 3 khối trên mỗi hàng khi màn hình có độ rộng từ 768px đến 991px, và 2 khối trên mỗi hàng khi màn hình có độ rộng từ 576px đến 767px (kích thước nhỏ, sm), 1 khối trên 1 hàng khi màn hình có độ rộng dưới 576  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-lg-3 col-sm-6"></div>
+            <div class="col-md-4 col-lg-3 col-sm-6"></div>
+            <div class="col-md-4 col-lg-3 col-sm-6"></div>
+            <div class="col-md-4 col-lg-3 col-sm-6"></div>
+            <div class="col-md-4 col-lg-3 col-sm-6"></div>
+            <div class="col-md-4 col-lg-3 col-sm-6"></div>
+        </div>
+    </div>
+2.	Cách tạo cấu trúc lưới lồng nhau
+<!-- Cấu trúc lưới lồng nhau -->
+    <div class="container">
+        <!-- Chia khối div có class row làm đôi, mỗi phần có 1 nội dung bài viết, trong mỗi nội dung bài viết có 1 ảnh chiếm 5 phần, phần bài viết chiếm 7 phần (vì mỗi phần div sẽ có 12 phần) -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-5"> <!--ảnh chiếm 5 phần-->
+                        <img src="./images/1.jpg" alt=""> 
+                    </div>
+                    <div class="col-md-7"> <!--nội dung chiếm  phần-->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure adipisci consequatur sequi laborum tempora dicta maiores nam aspernatur, totam enim odio non alias sint itaque aperiam, fugiat pariatur maxime libero.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-5"> <!--ảnh chiếm 5 phần-->
+                        <img src="./images/2.jpg" alt=""> 
+                    </div>
+                    <div class="col-md-7"> <!--nội dung chiếm 7 phần-->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure adipisci consequatur sequi laborum tempora dicta maiores nam aspernatur, totam enim odio non alias sint itaque aperiam, fugiat pariatur maxime libero.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+3.	Cách sử dụng offset
+<!-- offset -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Nếu ghi class="col-md-4" thì ảnh trong thẻ div sẽ chiếm 4 phần nh ở bên trái, để đưa ảnh vào giữa ta dùng class="offset-md-4 col-md-4", offset-md-6 sẽ làm ảnh lệch qua bên phải thêm 2 phần  -->
+            <div class="offset-md-4 col-md-4">
+                <img src="./images/3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+Bài 61: Các class bootstrap sử dụng cho văn bản
+1.	Căn lề text: text-center, text-left, text-right
+Trong thẻ <p>, điều chỉnh class theo dạng nào thì sẽ căn lề theo định dạng đó, vd: <p class="text-center">Lorem ip…, mạc định sẽ là căn trái
+2.	Tạo độ đậm nhạt cho text: font-weight-bold, font-weight-light
+<p class="text-center font-weight-bold">Lorem…
+<p class="text-left font-weight-light">Lorem…
+3.	Chữ nghiêng: font-italic
+<p class="font-italic">Lorem
+4.	text-lowercase, text-uppercase, text-capitalize
+<p class="text-center text-lowercase">Lorem…: viết thường toàn bộ
+<p class="text-center text-uppercase ">Lorem… : viết in hoa toàn bộ
+<p class="text-center text-capitalize ">Lorem…: in hoa chữ cái đầu của mỗi chữ
+5.	Màu sắc chữ
+<p class="text-right text-primary">Lorem…: màu xanh dương
+<p class="text-left text-danger">Lorem…: màu đỏ
+Tham khảo thêm bên dưới:
+ 
+Bài 62: Các class bootstrap sử dụng cho ảnh
+1.	img-fluid: giữ tỷ lệ ảnh khi thay đổi kích thước trình duyệt, k phá vỡ cấu trúc bao bên ngoài ảnh, 
+vd: <img class="img-fluid" src="./images/1.jpg" alt="">, nếu các ảnh bên trong vẫn chưa đều nhau mặc dù các thẻ bao chúng được cấu hình như nhau, ta có thể css lại cho tương đồng về chiều cao hoặc chiều rộng, vd: 
+.img-fluid{
+            height: 240px;
+        } //css cho chính tên class luôn
+2.	Img-thumbnail: Tạo khung bao bên ngoài cho ảnh , rounded: Tạo bo góc cho ảnh
+<img class="img-thumbnail rounded" src="./images/2.jpg" alt="">
+3.	Tạo thẻ ảnh để hiển thị sản phẩm hoặc bài viết
+
+4.	Tạo slide ảnh
+
+
