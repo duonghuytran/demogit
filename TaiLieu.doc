@@ -1489,7 +1489,101 @@ vd: <img class="img-fluid" src="./images/1.jpg" alt="">, nếu các ảnh bên t
 2.	Img-thumbnail: Tạo khung bao bên ngoài cho ảnh , rounded: Tạo bo góc cho ảnh
 <img class="img-thumbnail rounded" src="./images/2.jpg" alt="">
 3.	Tạo thẻ ảnh để hiển thị sản phẩm hoặc bài viết
-
+<div class="row">
+            <div class="col-md-4">
+                <!-- class card này dùng để hiển thị hình ảnh sản phẩm với card-body bên dưới chứa các thành phần như:card-title (tiêu đề thẻ), card-text (nội dung thẻ), btn (nút bấm) btn-success (màu nút bấm) -->
+                <div class="card">
+                    <img src="./images/4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bài viết 1</h5>
+                      <p class="card-text">Tóm tắt bài viết 1</p>
+                      <a href="#" class="btn btn-success">Xem chi tiết</a>
+                    </div>
+                  </div>
+            </div>
 4.	Tạo slide ảnh
+<!-- 4.1 Dùng class carousel-indicators để tạo slide ảnh ở đầu thẻ body-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        
+        <!-- 4.2 Dùng class="carousel-indicators" để hiển thị số slide tương ứng với số ảnh trong class="carousel-inner" (4.3), nếu muốn tăng số lượng ảnh hiển thị thì thêm thẻ li và đồng thời thêm ảnh bên dưới -->
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
 
+        <!-- 4.3 Dùng class carousel-inner để thêm các ảnh hiển thị trong slide của class="carousel slide"-->
+        <!-- Đối với class carousel-inner, carousel-indicators thì các thẻ bên trong nó phải có class active kích hoạt class và để khi chuyển sang ảnh tiếp theo, class active sẽ được chuyển sang ảnh đó  -->
+        <!-- đưa nội dung vào trong ảnh, dùng class="carousel-caption d-none d-md-block" của Bootstrap -->
+        <div class="carousel-inner">
 
+          <!-- 4.3.1 Dùng class="carousel-item để thêm các ảnh, phần này là các ảnh tương ứng với các thẻ <li> ở trên -->
+          <!-- 4.3.1.1 Ảnh đầu tiên -->
+            <div class="carousel-item active">
+            <img class="d-block w-100" src="./images/2.jpg" alt="First slide">
+            <!-- Đây là phần nội dung ngay bên dưới của ảnh 2, đc thêm vào với vai trò là with caption-->
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Ảnh số 2</h5>
+                <p>Nội dung ảnh</p>
+            </div>
+          </div>
+
+          <!-- 4.3.1.1 Ảnh thứ 2 -->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./images/3.jpg" alt="Second slide">
+          </div>
+
+          <!-- 4.3.1.1 Ảnh thứ 3 -->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./images/1.jpg" alt="Third slide">
+          </div>
+
+          <!-- 4.3.1.1 Ảnh thứ 4 -->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./images/4.jpg" alt="Fourth slide">
+          </div>
+
+        </div>
+
+        <!-- 2 thẻ <a> bên dưới chính là icon điều hướng ảnh ở dưới, có thể bỏ ra nếu k cần-->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Trước đó</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Tiếp theo</span>
+        </a>
+      </div>
+Bài 63: Sử dụng bootstrap để tạo menu cho trang
+<!-- 1 và 3. Dùng class nav để xác định rằng phần tử là menu trong web, class bg-dark để tạo màu nền cho thanh menu, class justify-content-end là để đặt vị trí hiển thị của thanh menu, mặc định là bên trái, center ở giữa, end bên phải -->
+    <ul class="nav bg-dark justify-content-center">
+        <li class="nav-item"> 
+            <a class="nav-link" href="#">Trang chủ</a>
+        </li>
+  
+        <li class="nav-item"> 
+            <a class="nav-link" href="#">Bài viết</a>
+        </li>
+
+        <!-- 2. Dùng class nav-item để định dạng kiểu dáng của một mục trong menu, dùng class dropdown để tạo danh sách sản phẩm cho thẻ <li> Sản phẩm này-->
+        <li class="nav-item dropdown"> 
+            <!-- Class nav-link được sử dụng để khi click vào nó sẽ dẫn đến đường dẫn trong href, class dropdown-toggle giúp hiển thị icon dropdown, data-toggle="dropdown" là một thuộc tính tùy chỉnh (custom attribute) để xác định kiểu hành vi của dropdown-toggle, khi được nhấp vào, nó sẽ mở hoặc đóng dropdown menu bên dưới-->
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Sản phẩm</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="">Điện tử</a>
+                <a class="dropdown-item" href="">Điện lạnh</a>
+                <a class="dropdown-item" href="">May mặc</a>
+            </div>
+        </li>
+  
+        <li class="nav-item"> 
+            <a class="nav-link" href="#">Giới thiệu</a>
+        </li>
+    </ul>
+1. Các class để tạo menu: dùng thẻ ul và li ở ví dụ trên
+2. Tạo các menu con: xem ví dụ trên
+3. Các class điều chỉnh vị trí của menu: xem ví dụ trên
+Bài 64: Sử dụng bootstrap để tạo menu responsive
