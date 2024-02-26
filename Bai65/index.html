@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <style>
+        .btn-success{
+            background-color: yellow;
+        }
+    </style> -->
+</head>
+  <body>
+      
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Tạo ra nút bằng class btn với màu là class btn-success. Nếu k muốn sử dụng các màu có sẵn này, ta kết hợp css cho nó thành màu khác trong thẻ style, vd: .btn-success{background-color: yellow;} 
+                Các class màu sắc nói trên k nhất thiết chỉ sử dụng cho button mà còn có thể sử dụng các thẻ khác như thẻ a bên dưới-->
+                <button class="btn btn-success">success</button>
+                <a class="btn-danger ">danger</a>
+                <!-- thêm outline vào giữa class màu để set màu cho viền và chữ của btn, k áp dụng cho màu nền của btn -->
+                <button class="btn btn-outline-success">success</button>
+                <!-- Set độ lớn của btn bằng class btn-sm (nhỏ) hoặc btn-lg (lớn) -->
+                <button class="btn btn-success btn-lg">success</button>
+            </div>
+
+            <div class="col-md6">
+                <!-- class btn-group cho phép chứa các btn bên trong, đc sắp xếp liền nhau, btn đầu và cuối đc bo cong tự động, dùng class btn-group-lg để điều chỉnh kích thước của btn-group -->
+                <div class="btn-group btn-group-lg">
+                    <button class="btn btn-danger">Nút 1</button>
+                    <button class="btn btn-warning">Nút 2</button>
+                    <button class="btn btn-info">Nút 3</button>
+                </div>
+            </div>
+
+            <div class="col-md6">
+                <h3>dropdown button</h3>
+                <div class="btn-group">
+                    <!-- btn cho phép chứa các item bên trong giống như class="nav-item" -->
+                    <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Các sản phẩm</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="">Điện thoại</a>
+                        <a class="dropdown-item" href="">Tủ lạnh</a>
+                        <a class="dropdown-item" href="">TV</a>
+
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
