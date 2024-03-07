@@ -1637,6 +1637,10 @@ Bài 64: Sử dụng bootstrap để tạo menu responsive
         </div>
       </nav>
  
+
+ 
+
+ 
 Bài 65: Các class boostrap sử dụng tạo button
 1.	Các class tạo màu sắc cho button: primary (xanh dương), secondary (xám), success (xanh lá cây), danger (đỏ), warning (cam), info (xanh lơ), light (xám nhạt), dark (đen), link (đường link, kp màu)
 2.	Các class điều chỉnh kích thước
@@ -1673,4 +1677,18 @@ Bài 65: Các class boostrap sử dụng tạo button
                     </div> 
                 </div>
             </div>
+Bài 66: Tạo form bằng bootstrap
+Giao diện form cũng là một thành phần được bootstrap hỗ trợ rất tốt
+Class form-group và form-control: 2 loại này hỗ trợ nhiều loại form như: nhập mật khẩu (input type="password"), email, checkbox, tải file lên, v.v tùy vào nhu cầu sử dụng, vd: gõ b4-form-xxx sẽ có nhiều loại form hiện lên 
+Bài 67: Tạo cửa sổ popup và phân trang bằng boostrap 
+1.	Cách tạo modal (cửa sổ popup), các thành phần của modal: vì modal k hiển thị lên trên trình duyệt và có thể để bất kỳ đâu cũng đc nên chúng ta có thể để modal này ở vị trí bất kỳ, trong modal có 2 phần, 
+-	Phần 1: là 1 button hoặc 1 thẻ a, nh bắt buộc phải có data-toggle="modal" và data-target="#modelId" với modelId là id của modal ở phần 2, 
+-	Phần 2: là modal với phần nội dung được viết trong class="modal-body", phần tiêu đề đc viết trong class="modal-header", class="modal-footer" mặc định sẽ có nút close hoặc save, khi nhấn 1 trong 2 button đó chúng ta có thể code để thực hiện các thao tác nhất định
+Tham khảo thêm các modal khác tại: Modal · Bootstrap (getbootstrap.com)
+2.	Cách tạo phân trang: đây là phần giúp người dùng điều hướng đến trang khi 1 html có nhiều trang cần hiển thi, dùng nav aria-label="Page navigation" để tạo, trong đó có các thành phần quan trọng sau:
+-	2 thẻ li giúp hiển thị chữ “đầu” và “cuối”
+-	Các thẻ li hiển thị các trang, mỗi trang sử dụng 1 li, thẻ active nào ở li nào thì khi bấm vào số trang đó, nó sẽ đc tô màu xanh lên,
+Chi tiết xem Bài 67
+
+
 
