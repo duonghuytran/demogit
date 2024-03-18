@@ -1587,11 +1587,112 @@ Bài 63: Sử dụng bootstrap để tạo menu cho trang
 2. Tạo các menu con: xem ví dụ trên
 3. Các class điều chỉnh vị trí của menu: xem ví dụ trên
 Bài 64: Sử dụng bootstrap để tạo menu responsive
+<!-- 1. Để tương thích với các thiết bị có độ rộng màn hình khác nhau. Thanh công cụ của Bootstrap có thể mở rộng (expand) hoặc thu nhỏ (collapse) tùy thuộc vào kích thước màn hình. 
+      Các thanh công cụ tiêu chuẩn được tạo ra với lớp .navbar, và lớp .navbar-expand-xl|lg|md|sm để chỉ rõ với những 
+      độ rộng màn hình nào thì thanh công cụ sẽ mở rộng (expand), ngược lại thì nó thu gọn (collapse). Ở bên dưới khi màn hình có kích thước là lg (large >= 992px), nó sẽ mở rộng menu, còn nhỏ hơn nó sẽ thu gọn (collapse)
+      Nếu k sử dụng .navbar-expand-xl|lg|md|sm thì thanh công cụ sẽ luôn luôn thẳng đứng với mọi kích thước màn hình.-->
+      <!-- Dùng navbar-light tức là màu nền của thanh công cụ màu sáng. Bootstrap sẽ tự động đặt mầu chữ cho tất cả các Nav-item thành mầu đen. -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- 1.1 Sử dụng <a class="navbar-brand"> để tạo một Brand. Bạn có hai cách để đặt vị trí của Brand, nó có thể là phần tử con trực tiếp của ".navbar" hoặc là phần tử con trực tiếp của ".nav-item".-->
+        <a class="navbar-brand" href="#">
+          <!-- Đây sẽ là hình ảnh của brand. Tuy nhiên, khi thêm vào trình duyệt có thể ảnh sẽ k hiển thị như ý muốn, ta có thể css trong dev-tool - thẻ Styles để diều chỉnh các thông số cho phù hợp, nếu ok thì copy và dán và thẻ style css trong source code cho thẻ img đó -->
+          <img src="./Google-Symbol.png" alt="">
+        </a>
+        <!-- 1.2 class="navbar-toggler" mặc định có type là button, Khi nhấn vào button, phần tử có id là #menu sẽ được thực hiện theo một hiệu ứng collapse (sụp đổ), làm hiển thị hoặc ẩn đi một phần tử khác.-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+          <!-- 1.2.1 class="navbar-toggler-icon-menu" là icon mặc định của Bootstrap trong button này, nếu bỏ ra, nó sẽ có icon mặc định, là 1 thanh nằm ngang -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--1.3 Dùng class="navbar-collapse để điều chỉnh cách hiển của menu trên các thiết bị, sẽ có nút bấm để hiển thị các phần tử menu bị ẩn  -->
+        <div class="navbar-collapse collapse justify-content-end" id="menu">
+          <!-- 1.3.1 Một Navbar có thể chứa một hoặc nhiều ".navbar-nav". Dưới đây là một ví dụ, một Navbar với một Brand, một ".navbar-nav" ở bên trái và một ".navbar-nav" ở bên phải. -->
+          <ul class="navbar-nav">
+            <!-- 1.3.1.1. Sử dụng class active nếu muốn Bootstrap làm nổi bật (highlight) một Nav-item nào đó. Giống như nó đang được lựa chọn (hoặc đang đươc kích hoạt). -->
+            <li class="nav-item active"> 
+                <!-- Trong Bootstrap, các thành phần trong menu được xây dựng dưới dạng một danh sách (list) các mục (items). Mỗi mục được đại diện bởi class nav-item, và các liên kết bên trong mỗi mục được định dạng bằng class nav-link. -->
+                <a class="nav-link" href="#">Trang chủ</a>
+            </li>
+            
+            <!-- 1.3.1.2 -->
+            <li class="nav-item"> 
+                <a class="nav-link" href="#">Bài viết</a>
+            </li>
+            
+            <!-- 1.3.1.3 Class nav-item nh cho phép dropdown các dropdown-item -->
+            <li class="nav-item dropdown"> 
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Sản phẩm</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">Điện tử</a>
+                    <a class="dropdown-item" href="">Điện lạnh</a>
+                    <a class="dropdown-item" href="">May mặc</a>
+                </div>
+            </li>
+
+            <!-- 1.3.1.4 -->
+            <li class="nav-item"> 
+                <a class="nav-link" href="#">Giới thiệu</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+ 
+
+ 
+
+ 
+Bài 65: Các class boostrap sử dụng tạo button
+1.	Các class tạo màu sắc cho button: primary (xanh dương), secondary (xám), success (xanh lá cây), danger (đỏ), warning (cam), info (xanh lơ), light (xám nhạt), dark (đen), link (đường link, kp màu)
+2.	Các class điều chỉnh kích thước
+<div class="col-md-6">
+                <!-- Tạo ra nút bằng class btn với màu là class btn-success. Nếu k muốn sử dụng các màu có sẵn này, ta kết hợp css cho nó thành màu khác trong thẻ style, vd: .btn-success{background-color: yellow;} 
+                Các class màu sắc nói trên k nhất thiết chỉ sử dụng cho button mà còn có thể sử dụng các thẻ khác như thẻ a bên dưới-->
+                <button class="btn btn-success">success</button>
+                <a class="btn-danger ">danger</a>
+                <!-- thêm outline vào giữa class màu để set màu cho viền và chữ của btn, k áp dụng cho màu nền của btn -->
+                <button class="btn btn-outline-success">success</button>
+                <!-- Set độ lớn của btn bằng class btn-sm (nhỏ) hoặc btn-lg (lớn) -->
+                <button class="btn btn-success btn-lg">success</button>
+            </div>
+3.	Tạo nhóm các button
+<div class="col-md6">
+                <!-- class btn-group cho phép chứa các btn bên trong, đc sắp xếp liền nhau, btn đầu và cuối đc bo cong tự động, dùng class btn-group-lg để điều chỉnh kích thước của btn-group -->
+                <div class="btn-group btn-group-lg">
+                    <button class="btn btn-danger">Nút 1</button>
+                    <button class="btn btn-warning">Nút 2</button>
+                    <button class="btn btn-info">Nút 3</button>
+                </div>
+            </div>
+
+            <div class="col-md6">
+                <h3>dropdown button</h3>
+                <div class="btn-group">
+                    <!-- btn cho phép chứa các item bên trong giống như class="nav-item" -->
+                    <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Các sản phẩm</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="">Điện thoại</a>
+                        <a class="dropdown-item" href="">Tủ lạnh</a>
+                        <a class="dropdown-item" href="">TV</a>
+
+                    </div> 
+                </div>
+            </div>
+Bài 66: Tạo form bằng bootstrap
+Giao diện form cũng là một thành phần được bootstrap hỗ trợ rất tốt
+Class form-group và form-control: 2 loại này hỗ trợ nhiều loại form như: nhập mật khẩu (input type="password"), email, checkbox, tải file lên, v.v tùy vào nhu cầu sử dụng, vd: gõ b4-form-xxx sẽ có nhiều loại form hiện lên 
+Bài 67: Tạo cửa sổ popup và phân trang bằng boostrap 
+1.	Cách tạo modal (cửa sổ popup), các thành phần của modal: vì modal k hiển thị lên trên trình duyệt và có thể để bất kỳ đâu cũng đc nên chúng ta có thể để modal này ở vị trí bất kỳ, trong modal có 2 phần, 
+-	Phần 1: là 1 button hoặc 1 thẻ a, nh bắt buộc phải có data-toggle="modal" và data-target="#modelId" với modelId là id của modal ở phần 2, 
+-	Phần 2: là modal với phần nội dung được viết trong class="modal-body", phần tiêu đề đc viết trong class="modal-header", class="modal-footer" mặc định sẽ có nút close hoặc save, khi nhấn 1 trong 2 button đó chúng ta có thể code để thực hiện các thao tác nhất định
+Tham khảo thêm các modal khác tại: Modal · Bootstrap (getbootstrap.com)
+2.	Cách tạo phân trang: đây là phần giúp người dùng điều hướng đến trang khi 1 html có nhiều trang cần hiển thi, dùng nav aria-label="Page navigation" để tạo, trong đó có các thành phần quan trọng sau:
+-	2 thẻ li giúp hiển thị chữ “đầu” và “cuối”
+-	Các thẻ li hiển thị các trang, mỗi trang sử dụng 1 li, thẻ active nào ở li nào thì khi bấm vào số trang đó, nó sẽ đc tô màu xanh lên,
+Chi tiết xem Bài 67
 Bài 68: Collapse trong bootstrap
 1. Khái niệm collapse:
 class collapse trong Bootstrap là công cụ để ẩn hoặc hiển thị một phần tử trên trang web và thường được sử dụng để tạo các phần tử có thể mở rộng hoặc thu gọn.
 thường được sử dụng trong các thẻ như div, span, hoặc bất kỳ phần tử HTML nào khác.
-
 2. Collapse button
 <!-- Có thể dùng thẻ a thay cho thẻ button dưới đây, bắt buộc phải có data-toggle="collapse" (mặc định) và data-target trỏ đến id của 1 thẻ nào đó -->
                     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#contentId" aria-expanded="false"
@@ -1615,3 +1716,19 @@ thường được sử dụng trong các thẻ như div, span, hoặc bất k�
 - href="#section1ContentId" công dụng giống như data-target="#contentId"
 - Thuộc tính role="tablist": Xác định vai trò của container là một danh sách các tab.
 - Thuộc tính aria-multiselectable="true": Xác định rằng người dùng có thể chọn nhiều tab cùng một lúc. vd: phần khi
+Bài 69: Xây dựng trang giới thiệu sản phẩm bằng bootstrap -phần 1
+1.	Slide ảnh sản phẩm: 
+2.	Danh sách sản phẩm
+3.	Tìm kiếm và tạo mới sản phẩm
+4.	Phân trang sản phẩm
+Xem bài tập và các chú thích đi kèm để hiểu rõ hơn
+Bài 70: Xây dựng trang giới thiệu sản phẩm bằng bootstrap - phần 2
+1.	Tạo popup tạo mới, cập nhật sản phẩm
+2.	Tạo popup hiển thị thông tin sản phẩm
+Bài 71: Giới thiệu API, Postman
+1.	Khái niệm API: là viết tắt của Application Programming Interface (giao diện lập trình ứng dụng) phương thức kết nối với các thư viện và ứng dụng khác. Hiểu 1 cách đơn giản thì API là một đường link bình thường, khi chúng ta gọi đến đường link đó và gửi kèm 1 số thông tin cần thiết, nó sẽ trả về dữ liệu dạng JSON, chúng ta sẽ chuyển đổi dạng JSON đó sang kdl js phù hợp để sử dụng
+2.	Các method hay sử dụng trong API: Post, Put, Get, Delete.
+3.	Sử dụng postman test các API
+
+
+

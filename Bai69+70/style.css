@@ -1,0 +1,26 @@
+body{
+    /* margin và padding = 0 để bỏ đi khoảng cách của trang với viền trình duyệt bên ngoài */
+    margin: 0px;
+    padding: 0px;
+}
+.w-100{
+    height: 400px;
+
+}
+.container{
+    margin-top: 30px;
+}
+.sanpham{
+    margin-top: 30px;
+}
+.row{
+    margin-top: 30px;
+}
+/* css height cho class card-img-top để bảo đảm các ảnh k bị chênh cao/thấp, để k phải điều chỉnh-lưu-xem lại, có thể vào dev-tool để điều chỉnh thông số height phù hợp và trở lại css trong code */
+.card-img-top{
+    height: 200px;
+}
+.para-detail{
+    overflow: scroll;
+    height: 200px;
+}
